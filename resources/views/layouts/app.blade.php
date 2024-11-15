@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     @include('partials.head')
-    <title>@yield('title', 'Laravel App')</title>
+    <title>@yield('title', 'My Persona')</title>
 </head>
 <body>
     @include('partials.header')
