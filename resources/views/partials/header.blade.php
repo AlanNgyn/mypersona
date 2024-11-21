@@ -100,7 +100,7 @@
             <a href="#"><span>Men</span></a>
             <a href="#"><span>Kids</span></a>
         </div>
-        <div class="logo">
+        <a href="/" class="logo">
             <svg preserveAspectRatio="none" id="Layer_1" class="pointer-events-none" width="150" height="26"
                  viewBox="0 0 150 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.64196 14.7149V25.1974H0V0.739258H11.3908C15.8981 0.739258 18.5534 3.18459 18.5534 7.55233C18.5534 12.023 15.7931 14.7149 11.2506 14.7149H1.64196ZM1.64196 13.4225H11.216C14.5352 13.4225 16.8064 11.5008 16.8064 7.58755C16.8064 3.84842 14.6747 2.03305 11.0413 2.03305H1.64196V13.4225Z"
@@ -118,7 +118,7 @@
                 <path d="M138.399 0.804688H138.749L149.999 25.6123H143.536L142.627 23.2367H134.521L133.613 25.6123H127.148L138.399 0.804688ZM140.46 17.6463L138.574 12.7543L136.687 17.6463H140.46Z"
                       fill="black"></path>
             </svg>
-        </div>
+        </a>
         <div class="header-section-2-right">
             <a href="#"><i class="fa-lg fa-solid fa-magnifying-glass"></i></a>
             <a href="#"><i class="fa-lg fa-regular fa-circle-user"></i></a>

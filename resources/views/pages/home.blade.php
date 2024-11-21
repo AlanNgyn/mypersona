@@ -318,4 +318,7 @@
             </div>
         </div>
     </div>
+    @include('components.modal')
+    <script src="{{ asset('js/modal.js') }}"></script>
+
 @endsection
