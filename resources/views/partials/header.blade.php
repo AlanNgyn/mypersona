@@ -1,92 +1,95 @@
 <style>
-    .header {
-        display: flex;
-        flex-flow: column;
-    }
+    @media only screen and (min-width: 768px) {
 
-    .header-section-1 {
-        background-color: #f2f2f2;
-    }
+        .header {
+            display: flex;
+            flex-flow: column;
+        }
 
-    .header-section-1 > div {
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-        margin-left: 60px;
-        padding: 0 10px;
-        display: inline-flex;
-        height: 32px;
-        justify-content: center;
-        align-items: center;
-    }
+        .header-section-1 {
+            background-color: #f2f2f2;
+            display: none;
+        }
 
-    .header-section-2 {
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        border-bottom: 1px solid black;
-        height: 65px;
-        align-items: center;
-        padding: 0 80px;
-    }
+        .header-section-1 > div {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            margin-left: 60px;
+            /*padding: 0 10px;*/
+            display: inline-flex;
+            height: 32px;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .header-section-2-left,
-    .header-section-2-right {
-        display: flex;
-        flex-flow: row;
-        column-gap: 20px;
-        height: 100%;
-    }
+        .header-section-2 {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            height: 65px;
+            align-items: center;
+        }
 
-    .header-section-2-left > a, .header-section-2-right > a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-    }
+        .header-section-2-left,
+        .header-section-2-right {
+            display: flex;
+            flex-flow: row;
+            column-gap: 20px;
+            height: 100%;
+        }
+
+        .header-section-2-left > a, .header-section-2-right > a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
 
 
-    .header-section-2-left > a.active::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 50%;
-        border-bottom: 2px solid #000000;
-        transform: translateX(50%);
-    }
+        .header-section-2-left > a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50%;
+            border-bottom: 2px solid #000000;
+            transform: translateX(50%);
+        }
 
-    .header-section-2 .logo {
-        height: 25px;
-        position: relative;
-        width: 150px;
-    }
+        .header-section-2 .logo {
+            height: 25px;
+            position: relative;
+            width: 150px;
+        }
 
-    .navigation {
-        display: inline-flex;
-        justify-content: center;
-        height: 52px;
-        align-items: center;
-        position: relative;
-    }
+        .navigation {
+            display: inline-flex;
+            justify-content: center;
+            height: 52px;
+            align-items: center;
+            position: relative;
+        }
 
-    .navigation .group-menu {
-        display: flex;
-        flex-direction: row;
-        height: 100%;
-        list-style-type: none;
-        justify-content: space-between;
-        width: 50%;
-    }
+        .navigation .group-menu {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            list-style-type: none;
+            justify-content: space-between;
+            width: 100%;
+        }
 
-    .item.level0 {
-        align-content: center;
-        height: 100%;
-        padding: 0;
-    }
+        .item.level0 {
+            align-content: center;
+            height: 100%;
+            padding: 0;
+        }
 
-    .group-menu > .item.level0:hover > .menu {
-        display: grid;
-        z-index: 99;
+        .group-menu > .item.level0:hover > .menu {
+            display: grid;
+            z-index: 99;
+        }
     }
 </style>
 
@@ -129,5 +132,5 @@
 
     @include('partials.menu.menu-navigation')
 
-    @include('partials.banner')
+
 </div>
