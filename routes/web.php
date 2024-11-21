@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\BrandController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +19,44 @@ Route::get('/', function () {
     return view('pages/home');
 });
 
-Route::get('/plp', function () {
-    return view('pages/plp');
+Route::get('/brand/{id}', [BrandController::class, 'getBrand']);
+
+Route::get('/cart', function () {
+    return view('pages/cart');
+});
+
+Route::get('/persona-thrift', function () {
+    return view('pages/persona-thrift');
+});
+
+Route::get('/list-wishlist', function () {
+    return view('pages/list-wishlist');
+});
+
+Route::get('/luxury', function () {
+    return view('pages/luxury');
+});
+
+Route::get('/pdp/{id}', [ProductController::class, 'getProduct']);
+
+Route::get('/category-page/{id}', [CategoryController::class, 'getCategory']);
+
+Route::get('/brand-listing', function () {
+    return view('pages/brand-listing');
+});
+
+Route::get('/my-account', function () {
+    return view('pages/my-account');
+});
+
+Route::get('/my-account/order-history', function () {
+    return view('pages/my-account/order-history');
+});
+
+Route::get('/my-account/profile', function () {
+    return view('pages/my-account/profile');
+});
+
+Route::get('/my-account/brand', function () {
+    return view('pages/my-account/brand');
 });
