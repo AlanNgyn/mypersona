@@ -58,6 +58,35 @@
                 font-size: 16px;
                 line-height: 20.8px;
                 font-weight: 300;
+                margin: 10px;
+            }
+            input[type="radio"] {
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                border: 3px solid gray;
+                border-radius: 50%;
+                outline: none;
+                cursor: pointer;
+                position: relative;
+                top: 5px;
+                left: 5px;
+            }
+
+            input[type="radio"]:checked {
+                border-color: #000000;
+            }
+
+            input[type="radio"]:checked::after {
+                content: "";
+                width: 5px;
+                height: 5px;
+                background-color: #ffffff;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
         .newsletter-section .form-email {
@@ -205,6 +234,7 @@
             color: #8e8e8e;
         }
 
+
         .footer-banner {
             display: flex;
         }
@@ -245,7 +275,9 @@
         .newsletter-form-section {
             justify-content: center;
         }
-
+        .newsletter-form {
+            margin-bottom: 10px;
+        }
         .newsletter-notice {
             justify-content: flex-start;
             width: 100%;
@@ -311,32 +343,32 @@
                 <div class="title"><span>WOMEN</span></div>
                 <div class="column">
                     <ul>
-                        <li><a href="#">Air Jordan 1 low</a></li>
-                        <li><a href="#">NIKE Air Max Sneakers</a></li>
-                        <li><a href="#">Handbag</a></li>
-                        <li><a href="#">Lingerie</a></li>
-                        <li><a href="#">Nike Air Max 270</a></li>
+                        <li><a href="/brand-listing">Air Jordan 1 low</a></li>
+                        <li><a href="/brand-listing">NIKE Air Max Sneakers</a></li>
+                        <li><a href="/brand-listing">Handbag</a></li>
+                        <li><a href="/brand-listing">Lingerie</a></li>
+                        <li><a href="/brand-listing">Nike Air Max 270</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">Leather jackets</a></li>
-                        <li><a href="#">CategoraDenim jacketsy</a></li>
-                        <li><a href="#">Denim jackets</a></li>
-                        <li><a href="#">Leather pants</a></li>
-                        <li><a href="#">Hoodie</a></li>
+                        <li><a href="/brand-listing">Leather jackets</a></li>
+                        <li><a href="/brand-listing">CategoraDenim jacketsy</a></li>
+                        <li><a href="/brand-listing">Denim jackets</a></li>
+                        <li><a href="/brand-listing">Leather pants</a></li>
+                        <li><a href="/brand-listing">Hoodie</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">Between seasons jackets</a></li>
-                        <li><a href="#">Adidas Sneakers</a></li>
-                        <li><a href="#">Cowboy boots</a></li>
-                        <li><a href="#">Trenchcoats</a></li>
-                        <li><a href="#">Adidas Superstar</a></li>
+                        <li><a href="/brand-listing">Between seasons jackets</a></li>
+                        <li><a href="/brand-listing">Adidas Sneakers</a></li>
+                        <li><a href="/brand-listing">Cowboy boots</a></li>
+                        <li><a href="/brand-listing">Trenchcoats</a></li>
+                        <li><a href="/brand-listing">Adidas Superstar</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">Skinny jeans</a></li>
-                        <li><a href="#">Leggings</a></li>
-                        <li><a href="#">Ankle boots</a></li>
-                        <li><a href="#">Swim suits</a></li>
-                        <li><a href="#">Summer dresses</a></li>
+                        <li><a href="/brand-listing">Skinny jeans</a></li>
+                        <li><a href="/brand-listing">Leggings</a></li>
+                        <li><a href="/brand-listing">Ankle boots</a></li>
+                        <li><a href="/brand-listing">Swim suits</a></li>
+                        <li><a href="/brand-listing">Summer dresses</a></li>
                     </ul>
                 </div>
             </div>
@@ -344,28 +376,28 @@
                 <div class="title"><span>BRANDS FOR WOMEN</span></div>
                 <div class="column">
                     <ul>
-                        <li><a href="#">ADIDAS</a></li>
-                        <li><a href="#">ALDO</a></li>
-                        <li><a href="#">ASHLUXE</a></li>
-                        <li><a href="#">BOSS</a></li>
+                        <li><a href="/brand-listing">ADIDAS</a></li>
+                        <li><a href="/brand-listing">ALDO</a></li>
+                        <li><a href="/brand-listing">ASHLUXE</a></li>
+                        <li><a href="/brand-listing">BOSS</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">CERAVE</a></li>
-                        <li><a href="#">CLARKS</a></li>
-                        <li><a href="#">CROCS</a></li>
-                        <li><a href="#">CHARLES TYRWHITT</a></li>
+                        <li><a href="/brand-listing">CERAVE</a></li>
+                        <li><a href="/brand-listing">CLARKS</a></li>
+                        <li><a href="/brand-listing">CROCS</a></li>
+                        <li><a href="/brand-listing">CHARLES TYRWHITT</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">DEJIANDKOLA</a></li>
-                        <li><a href="#">FENTY BEAUTY</a></li>
-                        <li><a href="#">HIGH FASHION BY JOL</a></li>
-                        <li><a href="#">KILENTAR</a></li>
+                        <li><a href="/brand-listing">DEJIANDKOLA</a></li>
+                        <li><a href="/brand-listing">FENTY BEAUTY</a></li>
+                        <li><a href="/brand-listing">HIGH FASHION BY JOL</a></li>
+                        <li><a href="/brand-listing">KILENTAR</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">LEVI'S</a></li>
-                        <li><a href="#">MAC</a></li>
-                        <li><a href="#">MANGO</a></li>
-                        <li><a href="#">MAYBELINE</a></li>
+                        <li><a href="/brand-listing">LEVI'S</a></li>
+                        <li><a href="/brand-listing">MAC</a></li>
+                        <li><a href="/brand-listing">MANGO</a></li>
+                        <li><a href="/brand-listing">MAYBELINE</a></li>
                     </ul>
                 </div>
             </div>
@@ -377,10 +409,10 @@
             </div>
             <!-- Social Media Links -->
             <div class="footer-social">
-                <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok fa-lg"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                <a href="/register"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                <a href="/register"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="/register"><i class="fa-brands fa-tiktok fa-lg"></i></a>
+                <a href="/register"><i class="fa-brands fa-youtube fa-lg"></i></a>
             </div>
         </div>
         <!-- Bottom Footer -->

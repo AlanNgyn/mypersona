@@ -60,3 +60,7 @@ Route::get('/my-account/profile', function () {
 Route::get('/my-account/brand', function () {
     return view('pages/my-account/brand');
 });
+Route::get('/register', function () {
+    return view('pages/register');
+});
+

@@ -17,9 +17,8 @@ https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.css
 
     body {
         -webkit-font-smoothing: antialiased;
-        min-width: 80vw; /* Tỷ lệ tối thiểu là 80% chiều rộng màn hình */
-        width: 100%; /* Chiều rộng đầy đủ */
-        overflow-x: auto; /* H
+        width: 100%;
+        overflow-x: auto;
     }
 
     ul {
@@ -472,8 +471,6 @@ https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.css
 
     #Layer_1 {
         --f2w-order: 0;
-        width: 100%;
-        height: 103.1%;
         position: absolute;
         top: 0;
         left: -.3%

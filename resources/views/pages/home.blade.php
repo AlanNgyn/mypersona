@@ -229,6 +229,52 @@
                 }
             }
         }
+        .home-block.section_2 {
+            .block-list .list-item img {
+                height: auto;
+            }
+            .block-list .list-item {
+                position: relative;
+                width: 100%;
+                max-width: 600px;
+                margin: auto;
+                overflow: hidden;
+            }
+
+            .block-list .list-item .item-image {
+                position: relative;
+                display: block;
+            }
+
+            .block-list .list-item .item-image img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .block-list .list-item .item-image .description {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                color: white;
+                padding: 10px 15px;
+                border-radius: 8px;
+                text-align: left;
+            }
+
+            .block-list .list-item .item-image .description p {
+                margin: 0;
+                line-height: 1.5;
+                font-size: 14px;
+            }
+
+            .block-list .list-item .item-image .description .brand-name {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+        }
+
         .home-block.section_5, .home-block.section_2 {
             .block-list {
                 display: grid;
@@ -242,6 +288,85 @@
                 }
             }
         }
+        /*.section-branch {*/
+        /*    display: flex;*/
+        /*    justify-content: center;*/
+        /*    align-items: center;*/
+        /*    padding: 20px 16px;*/
+        /*    .brand-list {*/
+        /*        display: grid;*/
+        /*        grid-template-columns: repeat(3, 1fr);*/
+        /*        gap: 20px;*/
+        /*        max-width: 900px;*/
+        /*        margin: 0 auto;*/
+        /*    }*/
+
+        /*    .brand-item {*/
+        /*        display: flex;*/
+        /*        justify-content: center;*/
+        /*        align-items: center;*/
+        /*        overflow: hidden;*/
+        /*        border-radius: 8px;*/
+        /*        flex-direction: column;*/
+
+        /*        a.item-image-brand {*/
+        /*            height: 120px;*/
+        /*        }*/
+        /*        .brand-name-logo {*/
+        /*            text-align: center;*/
+        /*        }*/
+        /*    }*/
+
+        /*    .brand-item img {*/
+        /*        max-height: 90%;*/
+        /*        max-width: 90%;*/
+        /*        object-fit: contain;*/
+        /*    }*/
+        /*}*/
+        .section-branch {
+            display: flex;
+            justify-content: center;
+            padding: 20px 16px;
+        }
+
+        .brand-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .brand-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #F2F2F2;
+        }
+
+        .brand-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+        }
+
+        .brand-item img {
+            max-width: 60px;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        label {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            min-height: 1.5em;
+        }
+
     }
 </style>
 @section('content')
@@ -279,6 +404,142 @@
     </div>
     <div class="header">
         @include('partials.banner')
+    </div>
+{{--    <div class="section-branch">--}}
+{{--        <div class="brand-list">--}}
+{{--            <div class="brand-item">--}}
+{{--                    <a class="item-image-brand" href="/my-account/brand">--}}
+{{--                        <img src="{{ asset('images/section/brand/Clothing.png') }}" alt="Clothing">--}}
+{{--                    </a>--}}
+{{--                <label class="brand-name-logo">Clothing</label>--}}
+{{--            </div>--}}
+{{--            <div class="brand-item">--}}
+{{--                <a class="item-image-brand" href="/my-account/brand">--}}
+{{--                    <img src="{{ asset('images/section/brand/Shoes.png') }}" alt="Shoes">--}}
+{{--                </a>--}}
+{{--                <label class="brand-name-logo">Shoes</label>--}}
+{{--            </div>--}}
+{{--            <div class="brand-item">--}}
+{{--                <a class="item-image-brand" href="/my-account/brand">--}}
+{{--                    <img src="{{ asset('images/section/brand/Sportswear.png') }}" alt="Sportswear">--}}
+{{--                </a>--}}
+{{--                <label class="brand-name-logo">Sportswear</label>--}}
+{{--            </div>--}}
+{{--            <div class="brand-item">--}}
+{{--                <a class="item-image-brand" href="/my-account/brand">--}}
+{{--                    <img src="{{ asset('images/section/brand/Accessories.png') }}" alt="Accessories">--}}
+{{--                </a>--}}
+{{--                <label class="brand-name-logo">Accessories</label>--}}
+{{--            </div>--}}
+{{--            <div class="brand-item">--}}
+{{--                <a class="item-image-brand" href="/my-account/brand">--}}
+{{--                    <img src="{{ asset('images/section/brand/Skincare_Makeup.png') }}" alt="Skincare & Makeup">--}}
+{{--                </a>--}}
+{{--                <label class="brand-name-logo">Skincare & Makeup</label>--}}
+{{--            </div>--}}
+{{--            <div class="brand-item">--}}
+{{--                <a class="item-image-brand" href="/my-account/brand">--}}
+{{--                    <img src="{{ asset('images/section/brand/Persona-Thrifts.png') }}" alt="Persona-Thrifts">--}}
+{{--                </a>--}}
+{{--                <label class="brand-name-logo">Persona-Thrifts</label>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+    <div class="section-branch">
+        <div class="brand-list">
+            <div class="brand-container">
+                <div class="brand-item">
+                    <a class="item-image-brand" href="/my-account/brand">
+                        <img src="{{ asset('images/section/brand/Clothing.png') }}" alt="Clothing">
+                    </a>
+                </div>
+                <label>Clothing</label>
+            </div>
+
+            <div class="brand-container">
+                <div class="brand-item">
+                    <a class="item-image-brand" href="/my-account/brand">
+                        <img src="{{ asset('images/section/brand/Shoes.png') }}" alt="Shoes">
+                    </a>
+                </div>
+                <label>Shoes</label>
+            </div>
+
+            <div class="brand-container">
+                <div class="brand-item">
+                    <a class="item-image-brand" href="/my-account/brand">
+                        <img src="{{ asset('images/section/brand/Sportswear.png') }}" alt="Sportswear">
+                    </a>
+                </div>
+                <label>Sportswear</label>
+            </div>
+
+            <div class="brand-container">
+                <div class="brand-item">
+                    <a class="item-image-brand" href="/my-account/brand">
+                        <img src="{{ asset('images/section/brand/Accessories.png') }}" alt="Accessories">
+                    </a>
+                </div>
+                <label>Accessories</label>
+            </div>
+
+            <div class="brand-container">
+                <div class="brand-item">
+                    <a class="item-image-brand" href="/my-account/brand">
+                        <img src="{{ asset('images/section/brand/Skincare_Makeup.png') }}" alt="Skincare & Makeup">
+                    </a>
+                </div>
+                <label>Skincare & Makeup</label>
+            </div>
+
+            <div class="brand-container">
+                <div class="brand-item">
+                    <a class="item-image-brand" href="/my-account/brand">
+                        <img src="{{ asset('images/section/brand/Persona-Thrifts.png') }}" alt="Persona-Thrifts">
+                    </a>
+                </div>
+                <label>Persona-Thrifts</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-block section_2">
+        <div class="title">
+            <div><h2>Brand Focus</h2></div>
+            <div><span>Don't miss out on these brands</span></div>
+        </div>
+        <div class="block-list">
+            <div class="list-item ">
+                <a class="item-image" href="#">
+                    <img src="{{ asset('images/section/e85e0d3a9005ef4db440790c670f2c29.png') }}"
+                         alt="">
+                    <div class="description">
+                        <p>Irresistible Autumn</p>
+                        <p class="brand-name">Vero Moda</p>
+                    </div>
+                </a>
+            </div>
+            <div class="list-item ">
+                <a class="item-image" href="#">
+                    <img src="{{ asset('images/section/eb5367cfa7c8fc7f8ea8f961e7658794.png') }}"
+                         alt="">
+                    <div class="description">
+                        <p>UNLEASH YOUR CHAOS</p>
+                        <p class="brand-name">CONVERSE</p>
+                    </div>
+                </a>
+            </div>
+            <div class="list-item ">
+                <a class="item-image" href="#">
+                    <img src="{{ asset('images/section/cfed8adfb453392c16a68b65d0ae8ddd.png') }}"
+                         alt="">
+                    <div class="description">
+                        <p>Workout Wardrobe</p>
+                        <p class="brand-name">adidas by Stella McCartney</p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
     <div class="home-block section_4">
         <div class="title">
@@ -460,6 +721,4 @@
             });
         });
     });
-
-
 </script>

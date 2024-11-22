@@ -105,6 +105,7 @@
             .banner-info .icon {
                 svg{
                     stroke: #1c1c1c;
+                    fill: #1c1c1c;
                 }
             }
         }
@@ -130,7 +131,7 @@
 
         .banner-info.active {
             opacity: 1;
-            position: relative; /* To show the active banner */
+            position: relative;
         }
 
     }
