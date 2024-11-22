@@ -3,8 +3,9 @@
         display: flex;
         height: 1000px;
         line-height: 2.3;
-        padding-left: 60px;
-        padding-top: 40px;
+    }
+    .categories {
+        width: 100%;
     }
 
     .categories ul > span {
@@ -13,6 +14,15 @@
 
     .categories .level0 > span {
         font-size: 18px;
+        color: #717171;
+    }
+    .categories .level0 i {
+        color: #8E8E8E;
+        font-size: 13px;
+    }
+    .categories .level0.active > span,
+    .categories .level0.active > i {
+        color: #36717E;
     }
 
     .categories .level1 {
@@ -26,10 +36,16 @@
     .categories .level1 > li > span {
         font-size: 14px;
     }
+
+    @media (max-width: 768px) {
+        .left-navigation {
+            display: none;
+        }
+    }
 </style>
 
 <div class="categories">
-    <ul class="level0"><span>Clothing</span><i class="fa-solid fa-angle-down"></i>
+    <ul class="level0 active"><span>Clothing</span><i class="fa-solid fa-angle-down"></i>
         @for($i=1;$i<=4;$i++)
             <ul class="level1"><span>Sub-category {{$i}}</span><i class="fa-solid fa-angle-down"></i>
                 @for($j=1;$j<=3;$j++)
