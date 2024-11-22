@@ -448,11 +448,11 @@
     color: #1C1C1C;
 }
 .modal-footer .go-to-cart-btn {
-    width: 195px;
-    height: 48px;
     border: 1px solid #1C1C1C;
     background-color: #1C1C1C;
     color: #fff;
+    display: block;
+    padding: 14px 60px;
 }
 
 .product-image.fixed {
@@ -661,7 +661,7 @@
             </div>
             <div class="modal-footer">
                 <button class="continue-btn">Continue shopping</button>
-                <button class="go-to-cart-btn">Go to cart</button>
+                <a href="/cart" class="go-to-cart-btn">Go to cart</a>
             </div>
         </div>
 
