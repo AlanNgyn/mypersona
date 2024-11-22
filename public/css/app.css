@@ -1,1 +1,14 @@
 
+@font-face {
+    font-family: 'Neue Gravica';
+    src: url('/public/fonts/neue-gravica-regular.otf') format('truetype'),
+    url('/public/fonts/neue-gravica-bold.otf') format('truetype'),
+    url('/public/fonts/neue-gravica-extrabold.otf') format('truetype'),
+    url('/public/fonts/neue-gravica-light.otf') format('truetype'),
+    url('/public/fonts/neue-gravica-thin.otf') format('truetype');
+    font-style: normal;
+}
+
+body {
+    font-family: 'Neue Gravica', sans-serif;
+}

@@ -11,9 +11,18 @@ class ProductController extends Controller
         $mainImage = asset('images/pdp/'.$id.'/main-image.png');
         $brandLogo = asset('images/pdp/'.$id.'/brand/brand-1.png');
         switch ($id) {
-            case '2': $swatchColor = ['black', 'gray', 'purple', 'pink']; break;
-            case '3': $swatchColor = ['black', 'gray', 'mint', 'blue', 'white', 'pink']; break;
-            default: $swatchColor = ['black', 'gray', 'lightblue', 'blue', 'mediumblue', 'darkblue'];
+            case '2':
+                $swatchColor = ['black', 'gray', 'purple', 'pink'];
+                $productName = "Sweatshirt 'Essentials'";
+                break;
+            case '3':
+                $swatchColor = ['black', 'gray', 'mint', 'blue', 'white', 'pink'];
+                $productName = "Kids' Classic Lined Clog";
+                break;
+            default:
+                $swatchColor = ['black', 'gray', 'lightblue', 'blue', 'mediumblue', 'darkblue'];
+                $productName = "BAGGY DAD WOMEN'S JEANS";
+
         }
 
         $swatchImages = [];
@@ -23,7 +32,7 @@ class ProductController extends Controller
         foreach ($swatchColor as $color) {
             $swatchImages[] = [
                 'swatch' => asset('images/pdp/'.$id.'/color/'.$color.'.png'),
-                'image' => asset('images/pdp/'.$color.'.png'),
+                'image' => asset('images/pdp/'.$id.'/swatch-image/'.$color.'.png'),
                 'label' => $color,
             ];
         }
@@ -40,6 +49,7 @@ class ProductController extends Controller
             'moreProductImages' => $moreProductImages,
             'brandBanner' => $brandBanner,
             'similarProductImages' => $similarProductImages,
+            'productName' => $productName,
         ]);
     }
 }

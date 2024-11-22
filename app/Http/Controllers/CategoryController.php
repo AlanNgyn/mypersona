@@ -17,6 +17,7 @@ class CategoryController extends Controller
 
         switch ($id) {
             case '2': $name = 'Skincare & Makeup'; break;
+            case '3': $name = 'Mom jeans'; break;
             default: $name = 'Clothing';
         }
 

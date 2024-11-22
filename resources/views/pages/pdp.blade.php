@@ -215,6 +215,7 @@
 
 .breadcrumb-title-block .product-title {
     color: #1C1C1C;
+    text-transform: uppercase;
 }
 .breadcrumb-title-block  {
     margin-bottom: 25px;
@@ -575,9 +576,9 @@
                 <span class="chevron-right">
                     <i class="fa-solid fa-chevron-right"></i>
                 </span>
-                <span class="current">BAGGY DAD WO...</span>
+                <span class="current">{{ $productName }}</span>
             </div>
-            <div class="product-title">BAGGY DAD WOMEN'S JEANS</div>
+            <div class="product-title">{{ $productName }}</div>
         </div>
 
         <div class="accordion">

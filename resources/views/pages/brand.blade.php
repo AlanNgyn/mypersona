@@ -418,6 +418,11 @@
 .product-card .favorite i.fa-solid{
     color: #DA0202;
 }
+.product-item-image {
+    height: 287px;
+    background-color: #fff;
+    margin-bottom: 12px;
+}
 </style>
 
 @section('content')
@@ -443,130 +448,25 @@
                 </div>
 
                 <div class="products">
-                    <div class="product-card">
-                        <div class="favorite">
-                            <i class="fa-lg fa-regular fa-heart"></i>
+                    @for($i = 0; $i < 10; $i++)
+                        <div class="product-card">
+                            <div class="favorite">
+                                <i class="fa-lg fa-regular fa-heart"></i>
+                            </div>
+                            <div class="special-tag">Tip</div>
+                            <div class="discount-tag">10%</div>
+                            <div class="product-item-image"><img src="{{ $productImage }}" alt="product 1"></div>
+                            <div class="product-brand">Brand's name</div>
+                            <a href="/pdp/{{ $i % 3 + 1 }}" class="product-name">Product’s name </a>
+                            <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
+                            <div class="color-options">
+                                <span class="color-dot green"></span>
+                                <span class="color-dot black"></span>
+                                <span class="color-dot pink"></span>
+                                <span class="additional-colors">+12</span>
+                            </div>
                         </div>
-                        <div class="special-tag">Tip</div>
-                        <div class="discount-tag">10%</div>
-                        <img src="{{ asset('images/plp/product1.png') }}" alt="product 1">
-                        <div class="product-brand">Brand's name</div>
-                        <a href="/pdp" class="product-name">Product’s name </a>
-                        <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
-                        <div class="color-options">
-                            <span class="color-dot green"></span>
-                            <span class="color-dot black"></span>
-                            <span class="color-dot pink"></span>
-                            <span class="additional-colors">+12</span>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="favorite">
-                            <i class="fa-lg fa-regular fa-heart"></i>
-                        </div>
-                        <img src="{{ asset('images/plp/product2.png') }}" alt="product 2">
-                        <div class="product-brand">Brand's name</div>
-                        <a href="/pdp" class="product-name">Product’s name </a>
-                        <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
-                        <div class="color-options">
-                            <span class="color-dot green"></span>
-                            <span class="color-dot black"></span>
-                            <span class="color-dot pink"></span>
-                            <span class="additional-colors">+12</span>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="favorite">
-                            <i class="fa-lg fa-regular fa-heart"></i>
-                        </div>
-                        <div class="special-tag">Tip</div>
-                        <div class="discount-tag">10%</div>
-                        <img src="{{ asset('images/plp/product3.png') }}" alt="product 3">
-                        <div class="product-brand">Brand's name</div>
-                        <a href="/pdp" class="product-name">Product’s name </a>
-                        <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
-                        <div class="color-options">
-                            <span class="color-dot green"></span>
-                            <span class="color-dot black"></span>
-                            <span class="color-dot pink"></span>
-                            <span class="additional-colors">+12</span>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="favorite">
-                            <i class="fa-lg fa-regular fa-heart"></i>
-                        </div>
-                        <img src="{{ asset('images/plp/product4.png') }}" alt="product 4">
-                        <div class="product-brand">Brand's name</div>
-                        <a href="/pdp" class="product-name">Product’s name </a>
-                        <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
-                        <div class="color-options">
-                            <span class="color-dot green"></span>
-                            <span class="color-dot black"></span>
-                            <span class="color-dot pink"></span>
-                            <span class="additional-colors">+12</span>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="favorite">
-                            <i class="fa-lg fa-regular fa-heart"></i>
-                        </div>
-                        <img src="{{ asset('images/plp/product5.png') }}" alt="product 5">
-                        <div class="product-brand">Brand's name</div>
-                        <a href="/pdp" class="product-name">Product’s name </a>
-                        <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
-                        <div class="color-options">
-                            <span class="color-dot green"></span>
-                            <span class="color-dot black"></span>
-                            <span class="color-dot pink"></span>
-                            <span class="additional-colors">+12</span>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="favorite">
-                            <i class="fa-lg fa-regular fa-heart"></i>
-                        </div>
-                        <img src="{{ asset('images/plp/product6.png') }}" alt="product 6">
-                        <div class="product-brand">Brand's name</div>
-                        <a href="/pdp" class="product-name">Product’s name </a>
-                        <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
-                        <div class="color-options">
-                            <span class="color-dot green"></span>
-                            <span class="color-dot black"></span>
-                            <span class="color-dot pink"></span>
-                            <span class="additional-colors">+12</span>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="favorite">
-                            <i class="fa-lg fa-regular fa-heart"></i>
-                        </div>
-                        <img src="{{ asset('images/plp/product7.png') }}" alt="product 7">
-                        <div class="product-brand">Brand's name</div>
-                        <a href="/pdp" class="product-name">Product’s name </a>
-                        <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
-                        <div class="color-options">
-                            <span class="color-dot green"></span>
-                            <span class="color-dot black"></span>
-                            <span class="color-dot pink"></span>
-                            <span class="additional-colors">+12</span>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="favorite">
-                            <i class="fa-lg fa-regular fa-heart"></i>
-                        </div>
-                        <img src="{{ asset('images/plp/product8.png') }}" alt="product 8">
-                        <div class="product-brand">Brand's name</div>
-                        <a href="/pdp" class="product-name">Product’s name </a>
-                        <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
-                        <div class="color-options">
-                            <span class="color-dot green"></span>
-                            <span class="color-dot black"></span>
-                            <span class="color-dot pink"></span>
-                            <span class="additional-colors">+12</span>
-                        </div>
-                    </div>
+                    @endfor
                 </div>
             </div>
         </div>

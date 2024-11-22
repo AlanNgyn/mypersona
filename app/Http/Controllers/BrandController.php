@@ -131,9 +131,12 @@ class BrandController extends Controller
                 break;
         }
 
+        $productImage = asset('images/brand/'.$id.'/product-image.png');
+
         return view('pages.brand', [
             'title' => $title,
             'banner' => $banner,
+            'productImage' => $productImage
         ]);
     }
 }

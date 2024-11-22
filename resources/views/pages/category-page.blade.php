@@ -170,13 +170,14 @@
 .product-item-image {
     height: 287px;
     background-color: #fff;
+    margin-bottom: 12px;
 }
 </style>
 
 @section('content')
     <div class="plp-container">
         <div class="main-content">
-            <a class="banner" href="/brand" style="background-image: url('{{ $brandBanner }}');">
+            <a class="banner" href="/brand/1" style="background-image: url('{{ $brandBanner }}');">
             </a>
             <div class="producs-container">
                 <div class="category-title">
@@ -189,13 +190,13 @@
 
                 <div class="sub-categories">
                     <div class="current category-item"><span>All</span></div>
-                    <div class="category-item"><a ref="#">Skinny fit</a></div>
-                    <div class="category-item"><a ref="#">Wide leg</a></div>
-                    <div class="category-item"><a ref="#">Mom jeans</a></div>
+                    <div class="category-item"><a href="/category-page/3">Skinny fit</a></div>
+                    <div class="category-item"><a href="/category-page/3">Wide leg</a></div>
+                    <div class="category-item"><a href="/category-page/3">Mom jeans</a></div>
                 </div>
 
                 <div class="products">
-                    @foreach ($productImages as $image)
+                    @foreach ($productImages as $key => $image)
                         <div class="product-card">
                             <div class="favorite">
                                 <i class="fa-lg fa-regular fa-heart"></i>
@@ -204,7 +205,7 @@
                             <div class="discount-tag">10%</div>
                             <div class="product-item-image"><img src="{{ $image }}" alt="product 1"></div>
                             <div class="product-brand">Brand's name</div>
-                            <a href="/pdp" class="product-name">Product’s name </a>
+                            <a href="/pdp/{{ $key % 3 + 1 }}" class="product-name">Product’s name </a>
                             <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
                             <div class="color-options">
                                 <span class="color-dot green"></span>
