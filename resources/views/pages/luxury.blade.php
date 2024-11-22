@@ -22,15 +22,15 @@
 @section('content')
     <div class="container">
         <div class="content">
-            <a class="banner" href="/brand" style="background-image: url('{{ asset('images/luxury-banner/banner.png') }}');">
+            <a class="banner" href="/brand/3" style="background-image: url('{{ asset('images/luxury-banner/banner.png') }}');">
             </a>
-            <a class="banner" href="/brand" style="background-image: url('{{ asset('images/luxury-banner/banner1.png') }}');">
+            <a class="banner" href="/brand/4" style="background-image: url('{{ asset('images/luxury-banner/banner1.png') }}');">
             </a>
-            <a class="banner" href="/brand" style="background-image: url('{{ asset('images/luxury-banner/banner2.png') }}');">
+            <a class="banner" href="/brand/11" style="background-image: url('{{ asset('images/luxury-banner/banner2.png') }}');">
             </a>
-            <a class="banner" href="/brand" style="background-image: url('{{ asset('images/luxury-banner/banner3.png') }}');">
+            <a class="banner" href="/brand/13" style="background-image: url('{{ asset('images/luxury-banner/banner3.png') }}');">
             </a>
-            <a class="banner" href="/brand" style="background-image: url('{{ asset('images/luxury-banner/banner4.png') }}');">
+            <a class="banner" href="/brand/26" style="background-image: url('{{ asset('images/luxury-banner/banner4.png') }}');">
             </a>
         </div>
     </div>

@@ -30,19 +30,19 @@
         <div class="content">
             <div class="item">
                 <img src="{{ asset('images/my-account/cart.png') }}" alt="">
-                <span>Your order</span>
+                <a href="/my-account/order-history">Your order</a>
             </div>
             <div class="item">
                 <img src="{{ asset('images/my-account/profile.png') }}" alt="">
-                <span>Profile & security</span>
+                <a href="/my-account/profile">Profile & security</a>
             </div>
             <div class="item">
                 <img src="{{ asset('images/my-account/star.png') }}" alt="">
-                <span>Favorite brand</span>
+                <a href="/my-account/brand">Favorite brand</a>
             </div>
             <div class="item">
                 <img src="{{ asset('images/my-account/help.png') }}" alt="">
-                <span>Help</span>
+                <a href="#">Help</a>
             </div>
         </div>
     </div>

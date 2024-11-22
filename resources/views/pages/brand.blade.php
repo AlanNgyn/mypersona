@@ -37,8 +37,10 @@
     font-weight: 300;
 }
 .product-name {
-    font-weight: 600;
+    font-weight: 400;
     margin: 2px 0;
+    display: block;
+    color: #1C1C1C;
 }
 .product-price {
     color: #36717E;
