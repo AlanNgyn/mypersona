@@ -15,6 +15,10 @@ https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.css
         box-sizing: border-box
     }
 
+    a {
+        text-decoration: none;
+    }
+
     body {
         -webkit-font-smoothing: antialiased;
         width: 100%;

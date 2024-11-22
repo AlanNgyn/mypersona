@@ -13,6 +13,7 @@
     background-size: cover;
     display: block;
     margin: 0 -15px;
+    width: auto;
 }
 
 .producs-container {
@@ -134,6 +135,9 @@
     border: 1px solid #F2F2F2;
     color: #8E8E8E;
     margin-right: 5px;
+}
+.sub-categories .category-item a {
+    color: #8E8E8E;
 }
 .sub-categories .category-item.current {
     color: #1C1C1C;
