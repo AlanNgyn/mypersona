@@ -1,7 +1,6 @@
 <style>
     .header .banner {
-        background-color: #000000;
-
+        background-color: #ffffff;
     }
 
     .footer .banner {
@@ -20,10 +19,9 @@
         flex-basis: 0;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 40px;
+        width: 480px;
+        height: 52px;
         margin: 0 auto 0 0;
-        padding: 8px 150px;
         display: flex;
         position: relative;
         overflow: hidden;
@@ -33,8 +31,8 @@
         aspect-ratio: 1;
         --f2w-order: 0;
         flex-shrink: 0;
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         margin: 0;
         position: relative;
         overflow: hidden;
@@ -50,7 +48,91 @@
     }
 
     .icon-text {
-        color: #ffffff;
+        color: #1c1c1c;
+        font-weight: 400;
+        line-height: 18.2px;
+    }
+    @media only screen and (max-width: 680px) {
+        .banner-info {
+            grid-column-gap: 8px;
+            --f2w-order: 0;
+            flex-flow: row;
+            flex-grow: 1;
+            flex-basis: 0;
+            justify-content: center;
+            align-items: center;
+            width: 480px;
+            height: 52px;
+            margin: 0 auto 0 0;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            gap: 8px;
+        }
+
+        .icon {
+            aspect-ratio: 1;
+            --f2w-order: 0;
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .icon #Vector_15{
+            --f2w-order: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .icon-text {
+            color: #ffffff;
+            font-weight: 400;
+            line-height: 18.2px;
+        }
+        /*
+        * auto banner
+         */
+        .header {
+            .icon-text {
+                color: #1c1c1c;
+            }
+            .banner-info .icon {
+                svg{
+                    stroke: #1c1c1c;
+                }
+            }
+        }
+        .banner {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        .banner-info {
+            flex: 0 0 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px; /* Adjust as needed */
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .banner-info.active {
+            opacity: 1;
+            position: relative; /* To show the active banner */
+        }
+
     }
 </style>
 <div class="banner">
@@ -89,3 +171,30 @@
         <div class="icon-text">SECURE PAYMENT</div>
     </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const banners = document.querySelectorAll('.footer .banner-info');
+        let currentIndex = 1;
+
+        function showNextBanner() {
+            banners[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % banners.length;
+            banners[currentIndex].classList.add('active');
+        }
+        banners[currentIndex].classList.add('active');
+        console.log(currentIndex);
+        setInterval(showNextBanner, 3000);
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+        const banners = document.querySelectorAll('.header .banner-info');
+        let index = 1;
+
+        function showNextBanner() {
+            banners[index].classList.remove('active');
+            index = (index + 1) % banners.length;
+            banners[index].classList.add('active');
+        }
+        banners[index].classList.add('active');
+        setInterval(showNextBanner, 3000);
+    });
+</script>

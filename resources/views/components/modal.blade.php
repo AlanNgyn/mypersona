@@ -5,9 +5,9 @@
         position: fixed;
         z-index: 1;
         left: 0;
-        top: 0;
-        width: 100%;
+        bottom: 0;
         height: 100%;
+        max-width: 100%;
         overflow: auto;
         background-color: rgba(0, 0, 0, 0.4);
     }
@@ -15,29 +15,36 @@
     .modal-content {
         display: flex;
         background-color: #fefefe;
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888;
         height: 252px;
-        width: 624px;
-        border-radius: 10px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
         justify-content: center;
         flex-flow: column;
         text-align: center;
         align-items: center;
         row-gap: 20px;
+        margin-top: 100%;
     }
 
     .modal-btn {
         background: #000000;
         color: #ffffff;
         height: 40px;
-        width: 212px;
+        width: 90%;
         align-content: center;
+        padding-top: 16px;
+        padding-bottom: 32px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.8px;
     }
     .modal-content .modal-title > span {
         font-weight: bolder;
         font-size: 28px;
+        font-weight: 600;
+        line-height: 36.4px;
+        height: 108px;
     }
 </style>
 
