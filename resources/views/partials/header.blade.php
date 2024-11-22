@@ -285,12 +285,34 @@
         const openSearchBtn = document.getElementById('search-button');
         const searchBlock = document.getElementById('search-block');
 
-        openSearchBtn.addEventListener('click', () => {
+        openSearchBtn.addEventListener('click', (event) => {
+            event.stopPropagation();
             if (searchBlock.classList.contains('hidden')) {
                 searchBlock.classList.remove('hidden');
             } else {
                 searchBlock.classList.add('hidden');
             }
+        });
+        document.addEventListener('click', (event) => {
+            if (!searchBlock.contains(event.target)) {
+                if (!searchBlock.classList.contains('hidden')) {
+                    searchBlock.classList.add('hidden');
+                }
+            }
+        });
+        searchBlock.addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
+
+
+        const tabitems = document.querySelectorAll('.tabs-block .tab-item');
+
+        tabitems.forEach(item => {
+            item.addEventListener('click', () => {
+                tabitems.forEach(i => i.classList.remove('current'));
+
+                item.classList.add('current');
+            });
         });
     });
 </script>
