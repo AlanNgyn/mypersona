@@ -15,11 +15,12 @@ https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.css
         box-sizing: border-box
     }
 
+    a {
+        text-decoration: none;
+    }
+
     body {
         -webkit-font-smoothing: antialiased;
-        min-width: 80vw; /* Tỷ lệ tối thiểu là 80% chiều rộng màn hình */
-        width: 100%; /* Chiều rộng đầy đủ */
-        overflow-x: auto; /* H
     }
 
     ul {

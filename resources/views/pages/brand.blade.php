@@ -9,6 +9,7 @@
 .brand-container .banner {
     height: 400px;
     margin: 0 -15px;
+    width: unset;
 }
 
 .producs-container {
