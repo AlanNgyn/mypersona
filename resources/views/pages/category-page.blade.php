@@ -28,6 +28,7 @@
 .product-card {
     text-align: center;
     position: relative;
+    display: block;
 }
 .product-card img {
     max-width: 100%;
@@ -199,7 +200,7 @@
 
                 <div class="products">
                     @foreach ($productImages as $key => $image)
-                        <div class="product-card">
+                        <a href="/pdp/{{ $key % 3 + 1 }}" class="product-card">
                             <div class="favorite">
                                 <i class="fa-lg fa-regular fa-heart"></i>
                             </div>
@@ -207,7 +208,7 @@
                             <div class="discount-tag">10%</div>
                             <div class="product-item-image"><img src="{{ $image }}" alt="product 1"></div>
                             <div class="product-brand">Brand's name</div>
-                            <a href="/pdp/{{ $key % 3 + 1 }}" class="product-name">Product’s name </a>
+                            <p class="product-name">Product’s name </p>
                             <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
                             <div class="color-options">
                                 <span class="color-dot green"></span>
@@ -215,7 +216,7 @@
                                 <span class="color-dot pink"></span>
                                 <span class="additional-colors">+12</span>
                             </div>
-                        </div>
+                        </a>
                     @endforeach
                 </div>
             </div>

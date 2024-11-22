@@ -451,7 +451,7 @@
 
                 <div class="products">
                     @for($i = 0; $i < 10; $i++)
-                        <div class="product-card">
+                        <a href="/pdp/{{ $i % 3 + 1 }}" class="product-card">
                             <div class="favorite">
                                 <i class="fa-lg fa-regular fa-heart"></i>
                             </div>
@@ -459,7 +459,7 @@
                             <div class="discount-tag">10%</div>
                             <div class="product-item-image"><img src="{{ $productImage }}" alt="product 1"></div>
                             <div class="product-brand">Brand's name</div>
-                            <a href="/pdp/{{ $i % 3 + 1 }}" class="product-name">Product’s name </a>
+                            <p class="product-name">Product’s name </p>
                             <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
                             <div class="color-options">
                                 <span class="color-dot green"></span>
@@ -467,7 +467,7 @@
                                 <span class="color-dot pink"></span>
                                 <span class="additional-colors">+12</span>
                             </div>
-                        </div>
+                        </a>
                     @endfor
                 </div>
             </div>
