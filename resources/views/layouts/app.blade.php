@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    @include('partials.header')
-
+{{--    @if (!isset($hideHeaderFooter) || !$hideHeaderFooter)--}}
+        @include('partials.header')
+{{--    @endif--}}
     @yield('content')
-
-    @include('partials.footer')
+{{--    @if (!isset($hideHeaderFooter) || !$hideHeaderFooter)--}}
+        @include('partials.footer')
+{{--    @endif--}}
 </body>
 </html>

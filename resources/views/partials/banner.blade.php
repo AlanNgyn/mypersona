@@ -183,7 +183,6 @@
             banners[currentIndex].classList.add('active');
         }
         banners[currentIndex].classList.add('active');
-        console.log(currentIndex);
         setInterval(showNextBanner, 3000);
     });
     document.addEventListener('DOMContentLoaded', () => {

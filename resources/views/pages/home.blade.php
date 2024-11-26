@@ -112,52 +112,50 @@
 * custom
  */
     @media only screen and (min-width: 0px) and (max-width: 640px){
-    /**
-    * slide
-     */
-        .home-block.slider {
+        /* Slider Container */
+        .slider {
             position: relative;
             overflow: hidden;
-            width: 100%;
-            max-width: 100%;
-        }
-        .slide-item {
-            display: none;
+            width: 800px;
+            height: fit-content;
         }
 
-        .slide-item.active {
-            display: block;
-        }
-
+        /* Slides Wrapper */
         .slides {
             display: flex;
-            transition: transform 0.5s ease-in-out;
+            flex-direction: row-reverse; /* RTL Direction */
             width: 100%;
+            height: 100%;
+            transform: translateX(0);
+            transition: transform 0.5s ease-in-out; /* Smooth transition */
         }
 
+        /* Individual Slide */
         .slide {
             min-width: 100%;
-            height: auto;
+            height: 100%;
         }
 
+        /* Dots Navigation */
         .dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
-            justify-content: center;
-            margin-top: 20px;
+            gap: 10px;
         }
 
-        .dots span {
-            height: 10px;
-            width: 10px;
-            margin: 0 5px;
-            background-color: #bbb;
+        .dot {
+            width: 15px;
+            height: 15px;
+            background-color: #ddd;
             border-radius: 50%;
-            display: inline-block;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
-        .dots .active {
+        .dot.active {
             background-color: #333;
         }
 
@@ -288,114 +286,60 @@
                 }
             }
         }
-        /*.section-branch {*/
-        /*    display: flex;*/
-        /*    justify-content: center;*/
-        /*    align-items: center;*/
-        /*    padding: 20px 16px;*/
-        /*    .brand-list {*/
-        /*        display: grid;*/
-        /*        grid-template-columns: repeat(3, 1fr);*/
-        /*        gap: 20px;*/
-        /*        max-width: 900px;*/
-        /*        margin: 0 auto;*/
-        /*    }*/
 
-        /*    .brand-item {*/
-        /*        display: flex;*/
-        /*        justify-content: center;*/
-        /*        align-items: center;*/
-        /*        overflow: hidden;*/
-        /*        border-radius: 8px;*/
-        /*        flex-direction: column;*/
-
-        /*        a.item-image-brand {*/
-        /*            height: 120px;*/
-        /*        }*/
-        /*        .brand-name-logo {*/
-        /*            text-align: center;*/
-        /*        }*/
-        /*    }*/
-
-        /*    .brand-item img {*/
-        /*        max-height: 90%;*/
-        /*        max-width: 90%;*/
-        /*        object-fit: contain;*/
-        /*    }*/
-        /*}*/
         .section-branch {
             display: flex;
             justify-content: center;
             padding: 20px 16px;
-        }
+            .brand-list {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                width: 100%;
+                max-width: 800px;
+                text-align: center;
+            }
 
-        .brand-list {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            width: 100%;
-            max-width: 800px;
-            text-align: center;
-        }
+            .brand-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: #F2F2F2;
+            }
 
-        .brand-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            background-color: #F2F2F2;
-        }
+            .brand-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 150px;
+            }
 
-        .brand-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 150px;
-        }
+            .brand-item img {
+                max-width: 60px;
+                max-height: 100%;
+                object-fit: contain;
+            }
 
-        .brand-item img {
-            max-width: 60px;
-            max-height: 100%;
-            object-fit: contain;
+            label {
+                margin-top: 10px;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: center;
+                min-height: 2.5em;
+                width: 100%;
+                background-color: #ffffff;
+            }
         }
-
-        label {
-            margin-top: 10px;
-            font-size: 14px;
-            font-weight: 500;
-            text-align: center;
-            min-height: 1.5em;
-        }
-
     }
 </style>
 @section('content')
-    <div class="home-block slider">
-        <div class="slide-item active">
-            <div class="slides">
-                <div class="slide"><img
-                        src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-e712066d87a15f1a00bffaadcfd0046f0fb4fad9/w=1850,f=auto,fit=cover"
-                        alt="Slide 1">
-                </div>
-            </div>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-e712066d87a15f1a00bffaadcfd0046f0fb4fad9/w=1850,f=auto,fit=cover" alt="Slide 1"></div>
+            <div class="slide"><img src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-8aa5945d99bbd7b93003f4b3f193b6d7e356b2f0/w=1200" alt="Slide 2"></div>
+            <div class="slide"><img src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-e712066d87a15f1a00bffaadcfd0046f0fb4fad9/w=1850,f=auto,fit=cover" alt="Slide 3"></div>
         </div>
-        <div class="slide-item">
-            <div class="slides">
-                <div class="slide"><img
-                        src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-8aa5945d99bbd7b93003f4b3f193b6d7e356b2f0/w=1200"
-                        alt="Slide 1">
-                </div>
-            </div>
-        </div>
-        <div class="slide-item">
-            <div class="slides">
-                <div class="slide"><img
-                        src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-e712066d87a15f1a00bffaadcfd0046f0fb4fad9/w=1850,f=auto,fit=cover"
-                        alt="Slide 1">
-                </div>
-            </div>
-        </div>
-
         <div class="dots">
             <span class="dot active"></span>
             <span class="dot"></span>
@@ -405,46 +349,6 @@
     <div class="header">
         @include('partials.banner')
     </div>
-{{--    <div class="section-branch">--}}
-{{--        <div class="brand-list">--}}
-{{--            <div class="brand-item">--}}
-{{--                    <a class="item-image-brand" href="/my-account/brand">--}}
-{{--                        <img src="{{ asset('images/section/brand/Clothing.png') }}" alt="Clothing">--}}
-{{--                    </a>--}}
-{{--                <label class="brand-name-logo">Clothing</label>--}}
-{{--            </div>--}}
-{{--            <div class="brand-item">--}}
-{{--                <a class="item-image-brand" href="/my-account/brand">--}}
-{{--                    <img src="{{ asset('images/section/brand/Shoes.png') }}" alt="Shoes">--}}
-{{--                </a>--}}
-{{--                <label class="brand-name-logo">Shoes</label>--}}
-{{--            </div>--}}
-{{--            <div class="brand-item">--}}
-{{--                <a class="item-image-brand" href="/my-account/brand">--}}
-{{--                    <img src="{{ asset('images/section/brand/Sportswear.png') }}" alt="Sportswear">--}}
-{{--                </a>--}}
-{{--                <label class="brand-name-logo">Sportswear</label>--}}
-{{--            </div>--}}
-{{--            <div class="brand-item">--}}
-{{--                <a class="item-image-brand" href="/my-account/brand">--}}
-{{--                    <img src="{{ asset('images/section/brand/Accessories.png') }}" alt="Accessories">--}}
-{{--                </a>--}}
-{{--                <label class="brand-name-logo">Accessories</label>--}}
-{{--            </div>--}}
-{{--            <div class="brand-item">--}}
-{{--                <a class="item-image-brand" href="/my-account/brand">--}}
-{{--                    <img src="{{ asset('images/section/brand/Skincare_Makeup.png') }}" alt="Skincare & Makeup">--}}
-{{--                </a>--}}
-{{--                <label class="brand-name-logo">Skincare & Makeup</label>--}}
-{{--            </div>--}}
-{{--            <div class="brand-item">--}}
-{{--                <a class="item-image-brand" href="/my-account/brand">--}}
-{{--                    <img src="{{ asset('images/section/brand/Persona-Thrifts.png') }}" alt="Persona-Thrifts">--}}
-{{--                </a>--}}
-{{--                <label class="brand-name-logo">Persona-Thrifts</label>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
     <div class="section-branch">
         <div class="brand-list">
             <div class="brand-container">
@@ -699,26 +603,38 @@
     document.addEventListener('DOMContentLoaded', () => {
         const slides = document.querySelector('.slides');
         const dots = document.querySelectorAll('.dot');
-        let currentIndex = 0;
         const slideCount = dots.length;
+        let currentIndex = 0;
+        const autoSlideInterval = 4000;
+        let sliderInterval;
 
-        const updateSlider = () => {
-            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        const updateSlidePosition = () => {
+            slides.style.transform = `translateX(+${currentIndex * 100}%)`;
             dots.forEach((dot, index) => {
                 dot.classList.toggle('active', index === currentIndex);
             });
         };
 
-        setInterval(() => {
+
+        const moveToNextSlide = () => {
             currentIndex = (currentIndex + 1) % slideCount;
-            updateSlider();
-        }, 3000);
+            updateSlidePosition();
+        };
+
 
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 currentIndex = index;
-                updateSlider();
+                updateSlidePosition();
+                clearInterval(sliderInterval);
+                // sliderInterval = startAutoSlide();
             });
         });
+
+        // Auto-slide logic
+        // const startAutoSlide = () => setInterval(moveToNextSlide, autoSlideInterval);
+
+        updateSlidePosition();
+        // sliderInterval = startAutoSlide();
     });
 </script>

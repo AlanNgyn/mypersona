@@ -4,6 +4,7 @@ use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\RegisterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages/home');
-});
+})->name('home');
 
 Route::get('/brand/{id}', [BrandController::class, 'getBrand']);
 
@@ -60,7 +61,7 @@ Route::get('/my-account/profile', function () {
 Route::get('/my-account/brand', function () {
     return view('pages/my-account/brand');
 });
-Route::get('/register', function () {
-    return view('pages/register');
-});
 
+Route::get('/register', [App\Http\Controllers\Auth\RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('/register', [App\Http\Controllers\Auth\RegisterController::class, 'register']);
+Route::post('/login', [App\Http\Controllers\Auth\LoginController::class, 'login']);

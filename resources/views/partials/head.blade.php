@@ -1,12 +1,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous" referrerpolicy="no-referrer"/>
-<script src="
-https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.js
-"></script>
-<link href="
-https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.css
-" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.css" rel="stylesheet">
 
 <style>
     *,
