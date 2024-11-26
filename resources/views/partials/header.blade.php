@@ -11,6 +11,10 @@
         align-items: center;
     }
 
+    .main-header .logo {
+        display: block;
+    }
+
     .left-content .menu-button {
         margin-right: 15px;
     }
