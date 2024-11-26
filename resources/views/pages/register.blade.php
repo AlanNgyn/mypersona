@@ -228,10 +228,9 @@
 @section('content')
     <div class="header-form">
         <div class="logo">
-            <span class="user-name">
-            {{ Auth::user() ? Auth::user()->last_name . "'S" : '' }}
-            </span>
-            <img src="{{ asset('images/header/logo.png') }}">
+            <a href="/">
+                <img src="{{ asset('images/header/logo.png') }}">
+            </a>
         </div>
     </div>
 

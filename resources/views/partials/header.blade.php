@@ -190,13 +190,26 @@
         height: 64px;
         width: 195px;
     }
+    .logo-user {
+        display: contents;
+        .user-name {
+            font-size: 28px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    }
 </style>
 
 <div class="header">
     <div class="main-header">
         <div class="left-content">
             <div class="menu-button" id="menu-button"><img src="{{ asset('images/header/icon/menu.png') }}"></div>
-            <div class="logo"><img src="{{ asset('images/header/logo.png') }}"></div>
+            <a href="/" class="logo-user">
+                <span class="user-name">
+                    {{ Auth::user() ? Auth::user()->last_name . "'S" : '' }}
+                </span>
+                <div class="logo"><img src="{{ asset('images/header/logo.png') }}"></div>
+            </a>
         </div>
         <div class="right-content">
             <div class="search-button" id="search-button"><img src="{{ asset('images/header/icon/search.png') }}"></div>
