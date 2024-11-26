@@ -4,9 +4,7 @@
 @endphp
 <style>
     .form-container {
-        max-width: 400px;
-        margin: auto;
-        margin-top: 50px;
+        padding: 50px 15px 20px;
 
         .form-content {
             display: none;
@@ -92,12 +90,6 @@
             border: 1px;
             border-radius: 2px;
             margin-right: 5px;
-        }
-
-        .form-content {
-            max-width: 400px;
-            margin: 0 auto;
-            font-family: Arial, sans-serif;
         }
 
         .mb-3 {
