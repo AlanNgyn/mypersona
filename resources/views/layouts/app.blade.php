@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+
     @if (!isset($hideHeaderFooter) || !$hideHeaderFooter)
         @include('partials.header')
     @endif
