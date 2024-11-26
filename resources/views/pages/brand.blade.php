@@ -9,6 +9,7 @@
 .brand-container .banner {
     height: 400px;
     margin: 0 -15px;
+    width: unset;
 }
 
 .producs-container {
@@ -28,13 +29,15 @@
 }
 .product-card img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 10px;
+    width: auto;
 }
 .product-card .product-brand {
     color: #717171;
     font-size: 12px;
     font-weight: 300;
+    text-transform: uppercase;
 }
 .product-name {
     font-weight: 400;
@@ -450,25 +453,19 @@
                 </div>
 
                 <div class="products">
-                    @for($i = 0; $i < 10; $i++)
-                        <a href="/pdp/{{ $i % 3 + 1 }}" class="product-card">
+                    @foreach ($products as $key => $product)
+                        <a href="/pdp/{{ $key % 3 + 1 }}" class="product-card">
                             <div class="favorite">
                                 <i class="fa-lg fa-regular fa-heart"></i>
                             </div>
                             <div class="special-tag">Tip</div>
                             <div class="discount-tag">10%</div>
-                            <div class="product-item-image"><img src="{{ $productImage }}" alt="product 1"></div>
-                            <div class="product-brand">Brand's name</div>
-                            <p class="product-name">Product’s name </p>
-                            <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
-                            <div class="color-options">
-                                <span class="color-dot green"></span>
-                                <span class="color-dot black"></span>
-                                <span class="color-dot pink"></span>
-                                <span class="additional-colors">+12</span>
-                            </div>
+                            <div class="product-item-image"><img src="{{ $productImages[$key+1] }}" alt="product 1"></div>
+                            <div class="product-brand">{{ $title }}</div>
+                            <p class="product-name">{{ $product['name'] }} </p>
+                            <div class="product-price">₦ 250.000,00</div>
                         </a>
-                    @endfor
+                    @endforeach
                 </div>
             </div>
         </div>

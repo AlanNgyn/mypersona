@@ -112,52 +112,50 @@
 * custom
  */
     @media only screen and (min-width: 0px) and (max-width: 640px){
-    /**
-    * slide
-     */
-        .home-block.slider {
+        /* Slider Container */
+        .slider {
             position: relative;
             overflow: hidden;
-            width: 100%;
-            max-width: 100%;
-        }
-        .slide-item {
-            display: none;
+            width: 800px;
+            height: fit-content;
         }
 
-        .slide-item.active {
-            display: block;
-        }
-
+        /* Slides Wrapper */
         .slides {
             display: flex;
-            transition: transform 0.5s ease-in-out;
+            flex-direction: row-reverse; /* RTL Direction */
             width: 100%;
+            height: 100%;
+            transform: translateX(0);
+            transition: transform 0.5s ease-in-out; /* Smooth transition */
         }
 
+        /* Individual Slide */
         .slide {
             min-width: 100%;
-            height: auto;
+            height: 100%;
         }
 
+        /* Dots Navigation */
         .dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
-            justify-content: center;
-            margin-top: 20px;
+            gap: 10px;
         }
 
-        .dots span {
-            height: 10px;
-            width: 10px;
-            margin: 0 5px;
-            background-color: #bbb;
+        .dot {
+            width: 15px;
+            height: 15px;
+            background-color: #ddd;
             border-radius: 50%;
-            display: inline-block;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
-        .dots .active {
+        .dot.active {
             background-color: #333;
         }
 
@@ -229,6 +227,52 @@
                 }
             }
         }
+        .home-block.section_2 {
+            .block-list .list-item img {
+                height: auto;
+            }
+            .block-list .list-item {
+                position: relative;
+                width: 100%;
+                max-width: 600px;
+                margin: auto;
+                overflow: hidden;
+            }
+
+            .block-list .list-item .item-image {
+                position: relative;
+                display: block;
+            }
+
+            .block-list .list-item .item-image img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .block-list .list-item .item-image .description {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                color: white;
+                padding: 10px 15px;
+                border-radius: 8px;
+                text-align: left;
+            }
+
+            .block-list .list-item .item-image .description p {
+                margin: 0;
+                line-height: 1.5;
+                font-size: 14px;
+            }
+
+            .block-list .list-item .item-image .description .brand-name {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+        }
+
         .home-block.section_5, .home-block.section_2 {
             .block-list {
                 display: grid;
@@ -242,35 +286,60 @@
                 }
             }
         }
+
+        .section-branch {
+            display: flex;
+            justify-content: center;
+            padding: 20px 16px;
+            .brand-list {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                width: 100%;
+                max-width: 800px;
+                text-align: center;
+            }
+
+            .brand-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: #F2F2F2;
+            }
+
+            .brand-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 150px;
+            }
+
+            .brand-item img {
+                max-width: 60px;
+                max-height: 100%;
+                object-fit: contain;
+            }
+
+            label {
+                margin-top: 10px;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: center;
+                min-height: 2.5em;
+                width: 100%;
+                background-color: #ffffff;
+            }
+        }
     }
 </style>
 @section('content')
-    <div class="home-block slider">
-        <div class="slide-item active">
-            <div class="slides">
-                <div class="slide"><img
-                        src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-e712066d87a15f1a00bffaadcfd0046f0fb4fad9/w=1850,f=auto,fit=cover"
-                        alt="Slide 1">
-                </div>
-            </div>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-e712066d87a15f1a00bffaadcfd0046f0fb4fad9/w=1850,f=auto,fit=cover" alt="Slide 1"></div>
+            <div class="slide"><img src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-8aa5945d99bbd7b93003f4b3f193b6d7e356b2f0/w=1200" alt="Slide 2"></div>
+            <div class="slide"><img src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-e712066d87a15f1a00bffaadcfd0046f0fb4fad9/w=1850,f=auto,fit=cover" alt="Slide 3"></div>
         </div>
-        <div class="slide-item">
-            <div class="slides">
-                <div class="slide"><img
-                        src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-8aa5945d99bbd7b93003f4b3f193b6d7e356b2f0/w=1200"
-                        alt="Slide 1">
-                </div>
-            </div>
-        </div>
-        <div class="slide-item">
-            <div class="slides">
-                <div class="slide"><img
-                        src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-e712066d87a15f1a00bffaadcfd0046f0fb4fad9/w=1850,f=auto,fit=cover"
-                        alt="Slide 1">
-                </div>
-            </div>
-        </div>
-
         <div class="dots">
             <span class="dot active"></span>
             <span class="dot"></span>
@@ -279,6 +348,102 @@
     </div>
     <div class="header">
         @include('partials.banner')
+    </div>
+    <div class="section-branch">
+        <div class="brand-list">
+            <div class="brand-container">
+                <div class="brand-item">
+                    <a class="item-image-brand" href="/my-account/brand">
+                        <img src="{{ asset('images/section/brand/Clothing.png') }}" alt="Clothing">
+                    </a>
+                </div>
+                <label>Clothing</label>
+            </div>
+
+            <div class="brand-container">
+                <div class="brand-item">
+                    <a class="item-image-brand" href="/my-account/brand">
+                        <img src="{{ asset('images/section/brand/Shoes.png') }}" alt="Shoes">
+                    </a>
+                </div>
+                <label>Shoes</label>
+            </div>
+
+            <div class="brand-container">
+                <div class="brand-item">
+                    <a class="item-image-brand" href="/my-account/brand">
+                        <img src="{{ asset('images/section/brand/Sportswear.png') }}" alt="Sportswear">
+                    </a>
+                </div>
+                <label>Sportswear</label>
+            </div>
+
+            <div class="brand-container">
+                <div class="brand-item">
+                    <a class="item-image-brand" href="/my-account/brand">
+                        <img src="{{ asset('images/section/brand/Accessories.png') }}" alt="Accessories">
+                    </a>
+                </div>
+                <label>Accessories</label>
+            </div>
+
+            <div class="brand-container">
+                <div class="brand-item">
+                    <a class="item-image-brand" href="/my-account/brand">
+                        <img src="{{ asset('images/section/brand/Skincare_Makeup.png') }}" alt="Skincare & Makeup">
+                    </a>
+                </div>
+                <label>Skincare & Makeup</label>
+            </div>
+
+            <div class="brand-container">
+                <div class="brand-item">
+                    <a class="item-image-brand" href="/my-account/brand">
+                        <img src="{{ asset('images/section/brand/Persona-Thrifts.png') }}" alt="Persona-Thrifts">
+                    </a>
+                </div>
+                <label>Persona-Thrifts</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-block section_2">
+        <div class="title">
+            <div><h2>Brand Focus</h2></div>
+            <div><span>Don't miss out on these brands</span></div>
+        </div>
+        <div class="block-list">
+            <div class="list-item ">
+                <a class="item-image" href="#">
+                    <img src="{{ asset('images/section/e85e0d3a9005ef4db440790c670f2c29.png') }}"
+                         alt="">
+                    <div class="description">
+                        <p>Irresistible Autumn</p>
+                        <p class="brand-name">Vero Moda</p>
+                    </div>
+                </a>
+            </div>
+            <div class="list-item ">
+                <a class="item-image" href="#">
+                    <img src="{{ asset('images/section/eb5367cfa7c8fc7f8ea8f961e7658794.png') }}"
+                         alt="">
+                    <div class="description">
+                        <p>UNLEASH YOUR CHAOS</p>
+                        <p class="brand-name">CONVERSE</p>
+                    </div>
+                </a>
+            </div>
+            <div class="list-item ">
+                <a class="item-image" href="#">
+                    <img src="{{ asset('images/section/cfed8adfb453392c16a68b65d0ae8ddd.png') }}"
+                         alt="">
+                    <div class="description">
+                        <p>Workout Wardrobe</p>
+                        <p class="brand-name">adidas by Stella McCartney</p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
     <div class="home-block section_4">
         <div class="title">
@@ -438,28 +603,38 @@
     document.addEventListener('DOMContentLoaded', () => {
         const slides = document.querySelector('.slides');
         const dots = document.querySelectorAll('.dot');
-        let currentIndex = 0;
         const slideCount = dots.length;
+        let currentIndex = 0;
+        const autoSlideInterval = 4000;
+        let sliderInterval;
 
-        const updateSlider = () => {
-            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        const updateSlidePosition = () => {
+            slides.style.transform = `translateX(+${currentIndex * 100}%)`;
             dots.forEach((dot, index) => {
                 dot.classList.toggle('active', index === currentIndex);
             });
         };
 
-        setInterval(() => {
+
+        const moveToNextSlide = () => {
             currentIndex = (currentIndex + 1) % slideCount;
-            updateSlider();
-        }, 3000);
+            updateSlidePosition();
+        };
+
 
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 currentIndex = index;
-                updateSlider();
+                updateSlidePosition();
+                clearInterval(sliderInterval);
+                // sliderInterval = startAutoSlide();
             });
         });
+
+        // Auto-slide logic
+        // const startAutoSlide = () => setInterval(moveToNextSlide, autoSlideInterval);
+
+        updateSlidePosition();
+        // sliderInterval = startAutoSlide();
     });
-
-
 </script>

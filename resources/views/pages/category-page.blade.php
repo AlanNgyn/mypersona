@@ -13,6 +13,7 @@
     background-size: cover;
     display: block;
     margin: 0 -15px;
+    width: auto;
 }
 
 .producs-container {
@@ -32,8 +33,9 @@
 }
 .product-card img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 10px;
+    width: auto;
 }
 .product-card .product-brand {
     color: #717171;
@@ -58,6 +60,7 @@
     text-decoration: line-through;
     color: #aaa;
     font-weight: 400;
+    font-size: 14px;
 }
 .favorite {
     position: absolute;
@@ -107,16 +110,19 @@
     display: inline-block;
 }
 
-.color-dot.green {
-    background-color: #008000;
+.color-dot.brown {
+    background-color: #663300;
 }
 
 .color-dot.black {
     background-color: #000;
 }
 
-.color-dot.pink {
-    background-color: #E1C1CB;
+.color-dot.blue {
+    background-color: #6495EC;
+}
+.color-dot.gray {
+    background-color: #464A31;
 }
 
 .additional-colors {
@@ -134,6 +140,9 @@
     border: 1px solid #F2F2F2;
     color: #8E8E8E;
     margin-right: 5px;
+}
+.sub-categories .category-item a {
+    color: #8E8E8E;
 }
 .sub-categories .category-item.current {
     color: #1C1C1C;
@@ -192,10 +201,13 @@
                 </div>
 
                 <div class="sub-categories">
-                    <div class="current category-item"><span>All</span></div>
-                    <div class="category-item"><a href="/category-page/3">Skinny fit</a></div>
-                    <div class="category-item"><a href="/category-page/3">Wide leg</a></div>
-                    <div class="category-item"><a href="/category-page/3">Mom jeans</a></div>
+                    @foreach ($subCategories as $key => $name)
+                        @if ($key == $currentSubCategories)
+                            <div class="current category-item"><span>{{ $name }}</span></div>
+                        @else
+                            <div class="category-item "><a href="/category-page/3">{{ $name }}</a></div>
+                        @endif
+                    @endforeach
                 </div>
 
                 <div class="products">
@@ -207,15 +219,19 @@
                             <div class="special-tag">Tip</div>
                             <div class="discount-tag">10%</div>
                             <div class="product-item-image"><img src="{{ $image }}" alt="product 1"></div>
-                            <div class="product-brand">Brand's name</div>
-                            <p class="product-name">Product’s name </p>
+                            <div class="product-brand">{{ $brandName }}</div>
+                            <p class="product-name">{{ $productNames[$key - 1] }}</p>
                             <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
-                            <div class="color-options">
-                                <span class="color-dot green"></span>
-                                <span class="color-dot black"></span>
-                                <span class="color-dot pink"></span>
-                                <span class="additional-colors">+12</span>
-                            </div>
+                            @if ($haveSwatchOptions)
+                                <div class="color-options">
+                                    <span class="color-dot brown"></span>
+                                    <span class="color-dot blue"></span>
+                                    <span class="color-dot black"></span>
+                                    <span class="color-dot gray"></span>
+                                    <span class="additional-colors">+12</span>
+                                </div>
+                            @endif
+
                         </a>
                     @endforeach
                 </div>

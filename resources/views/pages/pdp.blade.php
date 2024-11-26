@@ -350,6 +350,7 @@
     background-color: #fff;
     padding: 20px 15px;
     position: relative;
+    margin-bottom: 240px;
 }
 
 .more-brand-products .brand-banner {

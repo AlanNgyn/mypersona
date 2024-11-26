@@ -1,12 +1,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous" referrerpolicy="no-referrer"/>
-<script src="
-https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.js
-"></script>
-<link href="
-https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.css
-" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.css" rel="stylesheet">
 
 <style>
     *,
@@ -15,11 +11,14 @@ https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.css
         box-sizing: border-box
     }
 
+    a {
+        text-decoration: none;
+    }
+
     body {
         -webkit-font-smoothing: antialiased;
-        min-width: 80vw; /* Tỷ lệ tối thiểu là 80% chiều rộng màn hình */
-        width: 100%; /* Chiều rộng đầy đủ */
-        overflow-x: auto; /* H
+        width: 100%;
+        overflow-x: auto;
     }
 
     ul {
@@ -472,8 +471,6 @@ https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.css
 
     #Layer_1 {
         --f2w-order: 0;
-        width: 100%;
-        height: 103.1%;
         position: absolute;
         top: 0;
         left: -.3%
