@@ -65,7 +65,6 @@
     .home-block.section_4 {
         display: flex;
         flex-direction: column;
-        /*padding: 40px 60px 0 60px;*/
     }
 
     .home-block .block-list {
@@ -184,9 +183,6 @@
         min-width: 300px;
         scroll-snap-align: start;
         background: #f8f8f8;
-        border: 1px solid #e0e0e0;
-        border-radius: 8px;
-        padding: 10px;
 
     .item-image {
         text-decoration: none;
@@ -221,7 +217,7 @@
     }
     .home-block {
         padding: 20px 16px;
-        gap: 20px;
+        gap: 5px;
 
     .title {
         gap: 4px;
@@ -230,7 +226,7 @@
         font-weight: 600;
         font-size: 18px;
         line-height: 23.4px;
-        margin: 10px 0;
+        margin: 0;
     }
 
     span {
@@ -295,7 +291,7 @@
     .block-list {
         display: grid;
         gap: 16px;
-        margin-top: 10px;
+        margin-top: 20px;
 
     .list-item {
         flex-basis: 100%;
@@ -315,7 +311,7 @@
     .brand-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        gap: 10px;
         width: 100%;
         max-width: 800px;
         text-align: center;
@@ -326,30 +322,20 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        background-color: #F2F2F2;
     }
 
     .brand-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 150px;
+        margin-bottom: 10px;
     }
 
     .brand-item img {
-        max-width: 60px;
-        max-height: 100%;
-        object-fit: contain;
+        max-width: 100%;
     }
 
     label {
-        margin-top: 10px;
         font-size: 14px;
         font-weight: 500;
         text-align: center;
-        min-height: 2.5em;
-        width: 100%;
-        background-color: #ffffff;
     }
 
     }
@@ -389,6 +375,18 @@
         border-bottom: 2px solid #ffffff;
         transform: translateX(-50%);
     }
+    .home-block .title .popular-category {
+        font-size: 14px;
+        font-weight: 300;
+        color: #717171;
+    }
+    .home-block .title .popular-category span {
+        font-weight: 700;
+    }
+    .home-block .title .popular-category i {
+        font-size: 12px;
+        padding-left: 8px;
+    }
 
 </style>
 @section('content')
@@ -411,9 +409,7 @@
         </div>
 
     </div>
-    <div class="header">
-        @include('partials.banner')
-    </div>
+
     <div class="section-branch">
         <div class="brand-list">
             <div class="brand-container">
@@ -480,40 +476,28 @@
         <div class="block-list">
             <div class="list-item ">
                 <a class="item-image" href="#">
-                    <img src="{{ asset('images/section/e85e0d3a9005ef4db440790c670f2c29.png') }}"
+                    <img src="{{ asset('images/section/brand1.png') }}"
                          alt="">
-                    <div class="description">
-                        <p>Irresistible Autumn</p>
-                        <p class="brand-name">Vero Moda</p>
-                    </div>
                 </a>
             </div>
             <div class="list-item ">
                 <a class="item-image" href="#">
-                    <img src="{{ asset('images/section/eb5367cfa7c8fc7f8ea8f961e7658794.png') }}"
+                    <img src="{{ asset('images/section/brand2.png') }}"
                          alt="">
-                    <div class="description">
-                        <p>UNLEASH YOUR CHAOS</p>
-                        <p class="brand-name">CONVERSE</p>
-                    </div>
                 </a>
             </div>
             <div class="list-item ">
                 <a class="item-image" href="#">
-                    <img src="{{ asset('images/section/cfed8adfb453392c16a68b65d0ae8ddd.png') }}"
+                    <img src="{{ asset('images/section/brand3.png') }}"
                          alt="">
-                    <div class="description">
-                        <p>Workout Wardrobe</p>
-                        <p class="brand-name">adidas by Stella McCartney</p>
-                    </div>
                 </a>
             </div>
         </div>
     </div>
     <div class="home-block section_4">
         <div class="title">
-            <div><h2>Brand Focus</h2></div>
-            <div><span>Don't miss out on these brands</span></div>
+            <div><h2>Popular items</h2></div>
+            <div><a class="popular-category">From the <span>Sweaters & knitwear</span> category <i class="fa-solid fa-chevron-right"></i></a></div>
         </div>
         <div class="block-list">
             <div class="list-item">
@@ -591,44 +575,7 @@
             </div>
         </div>
     </div>
-    <div class="home-block section_4">
-        <div class="title">
-            <div><h2>Brand Focus</h2></div>
-            <div><span>Don't miss out on these brands</span></div>
-        </div>
-        <div class="block-list">
-            <div class="list-item">
-                <a class="item-image" href="#"><img
-                            src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-50c93854a360b6ec1a954a90f104d1804a16a59a/w=1200"
-                            alt="">
-                    <div class="title">
-                        <span>Irresistible Autumn</span>
-                        <h3>LEVI'S</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="list-item">
-                <a class="item-image" href="#"><img
-                            src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-8aa5945d99bbd7b93003f4b3f193b6d7e356b2f0/w=1200"
-                            alt="">
-                    <div class="title">
-                        <span>UNLEASH YOUR CHAOS</span>
-                        <h3>CROCS</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="list-item">
-                <a class="item-image" href="#"><img
-                            src="https://annalise-ejwgdmcpx3.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/annalise-ejwgdmcpx3.figweb.site-a3505aedcfe5c217503a50f74cb5f7a31dfced9e/w=700"
-                            alt="">
-                    <div class="title">
-                        <span>Workout Wardrobe</span>
-                        <h3>ADIDAS</h3>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
+
     <div class="home-block section_5">
         <div class="title">
             <div><h2>Popular brands</h2></div>

@@ -200,7 +200,7 @@
         display: flex;
         align-items: center;
         .user-name {
-            font-size: 28px;
+            font-size: 23px;
             font-weight: 800;
             text-transform: uppercase;
         }

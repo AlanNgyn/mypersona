@@ -33,12 +33,10 @@
         height: 40px;
         width: 100%;
         align-content: center;
-        padding-top: 16px;
-        padding-bottom: 32px;
         text-decoration: none;
         font-size: 16px;
         font-weight: 400;
-        line-height: 20.8px;
+        line-height: 40px;
     }
     .modal-content .modal-title > span {
         font-weight: bolder;
