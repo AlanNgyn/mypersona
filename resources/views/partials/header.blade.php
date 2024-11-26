@@ -40,6 +40,7 @@
         max-height: unset;
         border-radius: 0;
         padding: 0;
+        display: block;
     }
     .menu-drawer-modal .menu-modal-header {
         display: flex;
@@ -328,12 +329,15 @@
 
 
         const tabitems = document.querySelectorAll('.tabs-block .tab-item');
+        const storeLabels = document.querySelectorAll('.footer .store-label');
 
         tabitems.forEach(item => {
             item.addEventListener('click', () => {
                 tabitems.forEach(i => i.classList.remove('current'));
-
                 item.classList.add('current');
+                storeLabels.forEach(label => {
+                    label.textContent = item.textContent;
+                });
             });
         });
     });

@@ -299,6 +299,9 @@
             }
         }
     }
+    .footer .store-label {
+        text-transform: uppercase
+    }
 </style>
 
 
@@ -340,7 +343,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-row">
-                <div class="title"><span>WOMEN</span></div>
+                <div class="title"><span class="store-label">WOMEN</span></div>
                 <div class="column">
                     <ul>
                         <li><a href="/brand-listing">Air Jordan 1 low</a></li>
@@ -373,7 +376,7 @@
                 </div>
             </div>
             <div class="footer-row">
-                <div class="title"><span>BRANDS FOR WOMEN</span></div>
+                <div class="title"><span>BRANDS FOR <span class="store-label">WOMEN</span></span></div>
                 <div class="column">
                     <ul>
                         <li><a href="/brand-listing">ADIDAS</a></li>
