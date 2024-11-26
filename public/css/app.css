@@ -1,19 +1,19 @@
 
 @font-face {
     font-family: 'Neue Gravica';
-    src: url('/public/fonts/neue-gravica-regular.otf') format('truetype'),
-    url('/public/fonts/neue-gravica-bold.otf') format('truetype'),
-    url('/public/fonts/neue-gravica-bolditalic.otf') format('truetype'),
-    url('/public/fonts/neue-gravica-extrabold.otf') format('truetype'),
-    url('/public/fonts/neue-gravica-extrabolditalic.otf') format('truetype'),
-    url('/public/fonts/neue-gravica-extralight.otf') format('truetype'),
-    url('/public/fonts/neue-gravica-extralightitalic.otf') format('truetype'),
-    url('/public/fonts/neue-gravica-light.otf') format('truetype'),
-    url('/public/fonts/neue-gravica-medium.otf') format('truetype'),
-    url('/public/fonts/neue-gravica-semibold.otf') format('truetype'),
-    url('/public/fonts/neue-gravica-semibolditalic.otf') format('truetype'),
-    url('/public/fonts/neue-gravica-black.otf') format('truetype'),
-    url('/public/fonts/neue-gravica-thin.otf') format('truetype');
+    src: url('/fonts/neue-gravica-regular.otf') format('truetype'),
+    url('/fonts/neue-gravica-bold.otf') format('truetype'),
+    url('/fonts/neue-gravica-bolditalic.otf') format('truetype'),
+    url('/fonts/neue-gravica-extrabold.otf') format('truetype'),
+    url('/fonts/neue-gravica-extrabolditalic.otf') format('truetype'),
+    url('/fonts/neue-gravica-extralight.otf') format('truetype'),
+    url('/fonts/neue-gravica-extralightitalic.otf') format('truetype'),
+    url('/fonts/neue-gravica-light.otf') format('truetype'),
+    url('/fonts/neue-gravica-medium.otf') format('truetype'),
+    url('/fonts/neue-gravica-semibold.otf') format('truetype'),
+    url('/fonts/neue-gravica-semibolditalic.otf') format('truetype'),
+    url('/fonts/neue-gravica-black.otf') format('truetype'),
+    url('/fonts/neue-gravica-thin.otf') format('truetype');
     font-style: normal;
 }
 
