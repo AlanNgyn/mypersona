@@ -203,6 +203,7 @@
             font-size: 23px;
             font-weight: 800;
             text-transform: uppercase;
+            padding-right: 5px;
         }
     }
     .logo-user .user-name {
