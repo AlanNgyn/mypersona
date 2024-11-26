@@ -5,7 +5,7 @@
     <title>@yield('title', 'My Persona')</title>
 </head>
 <body>
-{{--    @include('partials.header')--}}
+    @include('partials.header')
 
     @yield('content')
 
