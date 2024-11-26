@@ -195,12 +195,16 @@
         width: 195px;
     }
     .logo-user {
-        display: contents;
+        display: flex;
+        align-items: center;
         .user-name {
             font-size: 28px;
             font-weight: 800;
             text-transform: uppercase;
         }
+    }
+    .logo-user .user-name {
+        line-height: 36px;
     }
 </style>
 
