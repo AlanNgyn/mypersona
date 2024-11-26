@@ -39,6 +39,7 @@
         height: 100%;
         max-height: unset;
         border-radius: 0;
+        padding: 0;
     }
     .menu-drawer-modal .menu-modal-header {
         display: flex;
