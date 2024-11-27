@@ -525,14 +525,18 @@
                 </div>
             </div>
 
-            <p class="product-color">Color: <span id="colorselectedValue"></span></p>
-            <div class="color-options">
-                @foreach ($swatchImages as $swatchImage)
-                    <div class="color-swatch {{ $swatchImage['label'] }}" data-label="{{ $swatchImage['label'] }}" data-image="{{ $swatchImage['image'] }}">
-                        <img src="{{ $swatchImage['swatch'] }}" alt="Swatch {{ $swatchImage['label'] }}">
-                    </div>
-                @endforeach
-            </div>
+
+            @if($hasSwatchColor)
+                <p class="product-color">Color: <span id="colorselectedValue"></span></p>
+                <div class="color-options">
+                    @foreach ($swatchImages as $swatchImage)
+                        <div class="color-swatch {{ $swatchImage['label'] }}" data-label="{{ $swatchImage['label'] }}" data-image="{{ $swatchImage['image'] }}">
+                            <img src="{{ $swatchImage['swatch'] }}" alt="Swatch {{ $swatchImage['label'] }}">
+                        </div>
+                    @endforeach
+                </div>
+            @endif
+
             <div class="size-selector">
                 <label for="sizeSelect">Size: <span id="selectedValue"></span></label>
                 <select id="sizeSelect">
