@@ -155,9 +155,9 @@ h1 {
                     <p class="label">C</p>
                     <div class="content">
                         <a href="/brand/5"><span class="name">CERAVE</span> <span class="count">5</span></a>
-                        <a href="/brand/6"><span class="name">CLARKS</span> <span class="count">543</span></a>
-                        <a href="/brand/7"><span class="name">CROCS</span> <span class="count">9</span></a>
-                        <a href="/brand/8"><span class="name">CHARLES TYRWHITT</span> <span class="count">9</span></a>
+                        <a href="/brand/7"><span class="name">CLARKS</span> <span class="count">543</span></a>
+                        <a href="/brand/8"><span class="name">CROCS</span> <span class="count">9</span></a>
+                        <a href="/brand/6"><span class="name">CHARLES TYRWHITT</span> <span class="count">9</span></a>
                     </div>
                 </div>
                 <div class="alphabel-section">

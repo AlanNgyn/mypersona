@@ -15,39 +15,48 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Baby Set',
-                        'price' => '₦ 44.741,40'
+                        'price' => '₦ 44.741,40',
+                        'productId' => 2
                     ],
                     [
                         'name' => 'Bralette Bikini Hills Hiker Allover Print',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2
                     ],
                     [
                         'name' => 'Dress Adicolor Classics Summer',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Mules Adilette 22',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Sneakers Superstar',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Sweatshirt Neucl',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Wide leg Pants Adicolor Neuclassics',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Bralette Active Swimsuit in Salmon',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ]
                 ];
                 $imageType = '.png';
@@ -61,43 +70,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Braymond Chelsea boot',
-                        'price' => '₦ 44.741,40'
+                        'price' => '₦ 44.741,40',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'BREA',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'CANTBRINGMEDOWN',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'HARRIOT',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'HARRIOT',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'HEARTSTEP',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'INDERPAUL',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'LUIGIA',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Maybellie-wc',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'SPELLBINDING',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                 ];
                 $imageType = '.jpeg';
@@ -109,43 +128,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Crest logo Polo',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 's Le Maestro Tee',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Boxing Trunk',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => '3 in 1 Female Briefs',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Crest Snapback',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Customisable Bathing Robe',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Cycling Jerseyv',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Hockey Jersey',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Neo Logo Hoodie',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Threaded Tank Top',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ]
                 ];
                 $imageType = '.png';
@@ -157,43 +186,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Knit Cardigan Fadenasi',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Knitted dress C Furner',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Knitted dress Ferdola',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'DOUBLE-BREASTED COAT',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'DRESSLETIC SLIM-FIT JACKET',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'FAUX-TEDDY SHOULDER BAG',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'LEATHER CHELSEA BOOTS',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'REGULAR-FIT SUIT',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'SLIM-FIT SHIRT',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'SLIM-FIT TROUSERS',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ]
                 ];
                 $imageType = '.jpeg';
@@ -205,43 +244,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Hydrating Cleanser Bar',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Hydrating Facial Cleanser',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Hydrating Foaming Oil Cleanser',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Hydrating Hyaluronic Acid Serum',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Hydrating Mineral Sunscreen SPF 30 Face Sheer Tint',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Hydrating Toner',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Moisturizing Cream',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Skin Renewing Eye Cream',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Skin Renewing Vitamin C Serum',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Ultra-Light Gel Moisturizer',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ]
                 ];
                 $imageType = '.jpeg';
@@ -253,43 +302,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Combination Braces',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Cutaway Collar Non-Iron Twill Shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Grain Leather Derby Brogue Rubber Sole Shoe',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Merino Shawl Neck Chunky Cardigan',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Merino Zip Neck Jumper',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Natural Stretch Twill Suit',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Patent Oxford Shoes',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'The Lions Hybrid Gilet',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Ultimate Non-Iron Chinos',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Zip-Neck Jersey Polo',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ]
                 ];
                 $imageType = '.jpeg';
@@ -301,43 +360,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Cologne Up Knee High Boot',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Desert Trek',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Foxing Beep Toddler',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Foxing Truck Toddler',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Hearth Kaylie Ankle Boot',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Kyndall Iris',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Relda Glow Kid',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Relda Spark Kid',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Ultimate Non-Iron Chinos',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Zip-Neck Jersey Polo',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ]
                 ];
                 $imageType = '.png';
@@ -349,43 +418,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'BAYA PLATFORM CLOG',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'CLASSIC PRINTED CLOG',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'CLASSIC SHAGGY FUR LINED CLOG',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'CRUSH CLOG',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'FORTNITE X CROCS 5 PACK JIBBITZ',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'FORTNITE X CROCS STOMP LINED CLOG CUDDLE TEAM LEADER',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'CLASSIC LINED CLOG',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'MEGA CRUSH MATTE SANDAL',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'STOMP SHORTY BOOT',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'WEDNESDAY STOMP CLOG',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ]
                 ];
                 $imageType = '.png';
@@ -397,43 +476,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'A “Manity” Trad X',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'A Chocolate Brown, Arewa Embroidery Traditional Agbada',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'A porcelain, connected medulla and wooven pattern embroidery detailing hat',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Navy Blue, Deltagbada Flapper Embroidery Details Agbada',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Sweet Heart Neck, Sheer Embellished Lace Tulle Trim Gown-Dress',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'The “AVT6” Suit',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'The “Iroko” Agbada',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'The “Rings & Snap 1864” Suit',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'The Red Moscow Hat',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'The unaltered Suit 2',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ]
                 ];
                 $imageType = '.jpeg';
@@ -445,43 +534,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Cheeks Out Freestyle Cream Blush',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Eaze Drop Blurring Skin Tint',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Flyliner Longwear Liquid Eyeliner',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Gloss Bomb Heat Universal Lip Luminizer + Plumper',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Gloss Bomb Universal Lip Luminizer',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Pro Filt R Soft Matte Powder Foundation',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Stunna Lip Paint Longwear Fluid Lip Color',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Skin Butta Drop Whipped Oil Body Cream Refill',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Fat Water Pore-Refining Toner Serum',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Hydra Vizor Invisible Moisturizer SPF 30',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ]
                 ];
                 $imageType = '.png';
@@ -493,43 +592,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'FLEECE HOODIE PANTS',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'FLEECE HOODIE SHORTS – PINK',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'FLEECE HOODIE TOP',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'HF BOULEVARD NORTH TEE',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'HF HUNTER BEANIE',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'HF JEAN FEMALE JACKET',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'HF NORTHERN KNOT TEE',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'HF PANEL CAP',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'HF RACER TOP',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'HF VELOUR TRACKSUIT PANTS',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ]
                 ];
                 $imageType = '.jpeg';
@@ -541,43 +650,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Abu Wide Leg Pants',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Ase Ruffle Mini Skirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Efe Orange Beaded Maxi Dress',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Gbemi Ruffle Maxi Skirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Igba Hoop Earrings',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Iwole Tie-Dye Ruffle Maxi Sk',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Joyo Meje Corset Top',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Joyo Meje Pink Corset Top',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Mami Beaded Halter Neck Maxi Dress',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Valco Slip Dresss',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ]
                 ];
                 $imageType = '.png';
@@ -589,43 +708,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Children’s T-Clip Leather Sneakers',
-                        'price' => '₦ 122.430,30'
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Double Sided Cotton Pique Oversized Polo Shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Kid’s Regular Fit Petit Pique Polo Shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Tennis Short Pleated Elastic Waist Skirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Graphic Pattern Swimsuit Top',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Lora Small Leather Bag',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Regular Fit Contrast Collar Poplin Shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Stretch Cotton Pique Polo Dress',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Sport X Novak Djokovic Microfiber Cap',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Unisex Heavy Knit Badge Tennis Sweater',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                 ];
                 $imageType = '.png';
@@ -637,43 +766,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Premium 90S TRUCKER JACKET',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Premium 578™ BAGGY MEN’S JEANS',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'BAGGY DAD WOMEN’S JEANS',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Premium RIBCAGE BELL WOMEN’S JEANS',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Premium VINTAGE WOMEN’S OVERALLS',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'LOGO T-SHIRT LITTLE GIRLS',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'PULL ON JEGGINGS TODDLER GIRLS',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'POTRERO DENIM HOODIE JACKET',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'TRUCKER JACKET',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'XL STRAIGHT WOMEN’S JEANS',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                 ];
                 $imageType = '.png';
@@ -685,39 +824,48 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Connect In Colour Eye Shadow Palette - Embedded in Burgundy',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Gilded Glamour Best-Sellers Trio',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Lipglass',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'SHEERTONE BLUSH',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Squirt Plumping Gloss Stick',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'FIX+ STAY OVER ALCOHOL-FREE 24HR SETTING SPRAY',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'M·A·CXIMAL SILKY MATTE LIPSTICK',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'M·A·CXIMAL SILKY MATTE LIPSTICK',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Studio Radiance Serum-Powered™ Foundation',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                 ];
                 $imageType = '.png';
@@ -729,43 +877,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Asymmetrical heeled shoes',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Beaded pendant earrings',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Cotton-knit jumpsuit',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Cotton-knit romper',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Degraded knitted sweater',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Halter-neck lurex knitted top',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Knitted sweater with squared structure',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Shopper bag with buckle',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Strapless lurex dress',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Two-tone lingerie dress',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                 ];
                 $imageType = '.png';
@@ -777,43 +935,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Baby Lips® Lip Makeup Crystal Moisturizing Lip Balm',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Instant Age Rewind® Eraser',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Lash Sensational Firework Washable Mascara Makeup',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Lash Sensational Sky High®',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Lifter Gloss® Lip Gloss Makeup With Hyaluronic Acid',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Lifter Liner Lip Liner Makeup with Hyaluronic Acid',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Lifter Stix Multi-Use Face Stick',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Master Precise® All Day Liquid Eyeliner Makeup',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Super Stay® Up To 24Hr Hybrid Powder-Foundation',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Super Stay® Vinyl Ink Longwear Liquid Lipcolor',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                 ];
                 $imageType = '.jpeg';
@@ -825,43 +993,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Air Matte Lip Color',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Duo Eyeshadow',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Explicit Lipstick',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Eyeliner Pencil',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Light Reflecting™ Quad Eyeshadow',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'ONLINE EXCLUSIVE Lipstick',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Orgasm Thrills Lip & Cheek Set',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Powermatte High-Intensity Lip Pencil',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Powermatte Lip Pigment',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Radiant Creamy Concealer',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                 ];
                 $imageType = '.png';
@@ -873,43 +1051,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Jordan 5-Piece Core Gift Set',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Naomi Osaka',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Ready, Set',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Air Force 1  - 07 LX',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Vapor 16 Pro Mercurial Dream Speed',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Nike One',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Nike Shox TL',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Nike Solo Swoosh',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Nike Sportswear Tech Fleece Windrunner',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Nike Universa',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                 ];
                 $imageType = '.png';
@@ -921,43 +1109,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'CARLEOLIA Quilted gilet',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'JDYGEGGO Mid waist Wide Leg Fit Wide leg trousers',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'KMGKAREN Knitted cardigan',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'ONLALMA Short dress',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'ONLEDIE Denim jacket',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'ONLELISA-1 Boots',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'ONLEMILY High waist Straight Fit Jeans',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'ONLHEATHER Denim jacket',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'ONLLIMA Scarf',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'ONLLYON Plissé skirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                 ];
                 $imageType = '.png';
@@ -969,43 +1167,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Amaka shirt',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Casj Easy Shift Dress',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Casj Lami Dress',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Casj Sisi Eko Crop Shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Casj Faces Shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Casj Orange Heart Flare Pants',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Casj Pink Crop Top',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Casj Sisi Skirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Lami Robe',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Mena Blazer',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                 ];
                 $imageType = '.png';
@@ -1017,43 +1225,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Swag demon belt',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Swag demon double layer black tee',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Swag demon shorts',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Wicked wave all red tee',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Wicked wave girls dress',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Wicked wave girls tank top',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Wicked wave quaterback tee',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Wicked wave zipper hoodie',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Slimeball jersey',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Swag demon polo',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                 ];
                 $imageType = '.png';
@@ -1065,43 +1283,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'CA PRO x Davido',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Iconic T7 Women’s Baby Tee',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Regular Workout Pants',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Skinny Workout Pants',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Sneakers Cabana Racer',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Sweatsuit Minicats',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Swim Women’s V-Neck Cross-back Swimsuit',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Women’s Crop Top',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Women’s Skirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'PUMA x Davido Archive Track Jacket',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                 ];
                 $imageType = '.png';
@@ -1113,43 +1341,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Cayenne mesh long sleeve t-shirt',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Motosport Blue Jersey',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Racer leather pants',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Daytona Longsleeve T-Shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Girl Racer Vest',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Motosport Black Track Jacket',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Racer Button-down black shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'SN Dakar Tank Top',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'S-star Desire white crop top',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Superman White T-shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                 ];
                 $imageType = '.png';
@@ -1161,43 +1399,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Kid’s Uno - Retro-Squad',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Men’s Relaxed Fit Sergeants - Thaxter',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'GO GOLF 600 Sandal',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Slip-ins Work - Tilido - Ombray',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Slip-ins - Summits - Dazzling Haze',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Waterproof Relaxed Fit - Respected - Ivar',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Arch Fit Arcade - Arcata',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Cypress - Bold Move',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Slip-ins - BOBS Sport Squad Chaos - Seize The Hour',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Slip-ins - GO GOLF Arch Fit - Line Up',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                 ];
                 $imageType = '.jpeg';
@@ -1209,43 +1457,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Dark Wash Wide Leg Jeans',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Hilfiger Monotype V-Neck Lounge Hoody',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Logo Crew Neck T-Shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Oversized Denim Trucker Jacket',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Soft Leather Convertible Crossbody Bag',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Underwear Swimsuit',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Tommy Jeans Crossbody Bag',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Smart Casual Wool Rich Coat',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'TH Essential Cover Up Beach Shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Warm Lined Hybrid Snow Boots',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                 ];
                 $imageType = '.png';
@@ -1257,43 +1515,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Aloe Invisible Sunscreen – 80Ml',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Argan Hydrating Moisturiser – 100Ml',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Baobab Glow-C Serum (Vitamin-C) – 30Ml',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Essentials Skincare Kit',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Glow and Protect Duo',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Green Tea Blemish Control Serum (Acne Control) – 30Ml',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Green Tea Revitalising Cleanser – 120Ml',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'I Am Spotless Pimple Patch – 18 Patches',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'On The Go Kit',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                     [
                         'name' => 'Rooibos Glow Toner – 125Ml',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 4,
                     ],
                 ];
                 $imageType = '.jpeg';
@@ -1305,43 +1573,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Basic Skorts',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Basic Tote bag',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Block work Ijebu Bucket Hat',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Lady of Lourdes Shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Lagos Island Bottoms',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Orisa Tee',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Orisha Tee',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'St. Rita Crop Shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'waf. Deck',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'waf.Coke WOZZAAH Hockey Jersey',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                 ];
                 $imageType = '.png';
@@ -1353,43 +1631,53 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'YC-009',
-                        'price' => '₦ 44.741,40'
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'YC-010',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'YC-013',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'YC-022',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'YC-024',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'YC-025',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'YC-026',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'YCN-002',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'YCN-005',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'YCN-007',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                 ];
                 $imageType = '.jpeg';
@@ -1401,39 +1689,48 @@ class BrandController extends Controller
                 $products = [
                     [
                         'name' => 'Baby Set',
-                        'price' => '₦ 44.741,40'
+                        'price' => '₦ 44.741,40',
+                        'productId' => 2
                     ],
                     [
                         'name' => 'Bralette Bikini Hills Hiker Allover Print',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2
                     ],
                     [
                         'name' => 'Dress Adicolor Classics Summer',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Mules Adilette 22',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Shirt',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Sneakers Superstar',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 3,
                     ],
                     [
                         'name' => 'Sweatshirt Neucl',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ],
                     [
                         'name' => 'Wide leg Pants Adicolor Neuclassics',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 1,
                     ],
                     [
                         'name' => 'Bralette Active Swimsuit in Salmon',
-                        'price' => ''
+                        'price' => '',
+                        'productId' => 2,
                     ]
                 ];
                 $imageType = '.png';

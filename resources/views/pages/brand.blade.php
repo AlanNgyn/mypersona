@@ -454,7 +454,7 @@
 
                 <div class="products">
                     @foreach ($products as $key => $product)
-                        <a href="/pdp/{{ $key % 3 + 1 }}" class="product-card">
+                        <a href="/pdp/{{ $product['productId'] }}" class="product-card">
                             <div class="favorite">
                                 <i class="fa-lg fa-regular fa-heart"></i>
                             </div>

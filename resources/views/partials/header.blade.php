@@ -34,7 +34,7 @@
         background-color: #fff;
         bottom: 0;
         left: 0;
-        overflow: hidden;
+        overflow: scroll;
         width: 100%;
         height: 100%;
         max-height: unset;
@@ -209,6 +209,9 @@
     .logo-user .user-name {
         line-height: 36px;
     }
+    body.overflow {
+        overflow: hidden;
+    }
 </style>
 
 <div class="header">
@@ -299,10 +302,12 @@
 
         openMenuBtn.addEventListener('click', () => {
             menuModal.classList.remove('hidden');
+            document.body.classList.add('overflow');
         });
 
         closeMenuModalBtn.addEventListener('click', () => {
             menuModal.classList.add('hidden');
+            document.body.classList.remove('overflow');
         });
 
 

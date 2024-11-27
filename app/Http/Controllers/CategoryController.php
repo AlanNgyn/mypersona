@@ -14,17 +14,48 @@ class CategoryController extends Controller
         switch ($id) {
             case '2':
                 $name = 'Skincare & Makeup';
+                $productId = 4;
                 $productNames = [
-                    'Hydrating Cleanser Bar',
-                    'Hydrating Facial Cleanser',
-                    'Hydrating Foaming Oil Cleanser',
-                    'Hydrating Hyaluronic Acid Serum',
-                    'Hydrating Mineral Sunscreen SPF 30 Face Sheer Tint',
-                    'Hydrating Toner',
-                    'Moisturizing Cream',
-                    'Skin Renewing Eye Cream',
-                    'Skin Renewing Vitamin C Serum',
-                    'Ultra-Light Gel Moisturizer'
+                    [
+                        'name' => 'Hydrating Cleanser Bar',
+                        'brand' => 'CERAVE'
+                    ],
+                    [
+                        'name' => ' Cheeks Out Freestyle Cream Blush',
+                        'brand' => 'FENTY'
+                    ],
+                    [
+                        'name' => 'Hydrating Foaming Oil Cleanser',
+                        'brand' => 'CERAVE'
+                    ],
+                    [
+                        'name' => 'Hydrating Hyaluronic Acid Serum',
+                        'brand' => 'CERAVE'
+                    ],
+                    [
+                        'name' => 'Gloss Bomb Heat Universal Lip Luminizer + Plumper',
+                        'brand' => 'FENTY'
+                    ],
+                    [
+                        'name' => 'Argan Hydrating Moisturiser – 100Ml',
+                        'brand' => 'UNCOVER'
+                    ],
+                    [
+                        'name' => 'Moisturizing Cream',
+                        'brand' => 'CERAVE'
+                    ],
+                    [
+                        'name' => 'Essentials Skincare Kit',
+                        'brand' => 'UNCOVER'
+                    ],
+                    [
+                        'name' => 'Skin Renewing Vitamin C Serum',
+                        'brand' => 'CERAVE'
+                    ],
+                    [
+                        'name' => 'Ultra-Light Gel Moisturizer',
+                        'brand' => 'CERAVE'
+                    ],
                 ];
                 $subCategories = [
                     'All',
@@ -38,13 +69,32 @@ class CategoryController extends Controller
                 break;
             case '3':
                 $name = 'Mom jeans';
+                $productId = 1;
                 $productNames = [
-                    'Product’s name ',
-                    'Product’s name ',
-                    'Product’s name ',
-                    'Product’s name ',
-                    'Product’s name ',
-                    'Product’s name ',
+                    [
+                        'name' => 'Product’s name',
+                        'brand' => 'Brand’s name'
+                    ],
+                    [
+                        'name' => 'Product’s name',
+                        'brand' => 'Brand’s name'
+                    ],
+                    [
+                        'name' => 'Product’s name',
+                        'brand' => 'Brand’s name'
+                    ],
+                    [
+                        'name' => 'Product’s name',
+                        'brand' => 'Brand’s name'
+                    ],
+                    [
+                        'name' => 'Product’s name',
+                        'brand' => 'Brand’s name'
+                    ],
+                    [
+                        'name' => 'Product’s name',
+                        'brand' => 'Brand’s name'
+                    ]
                 ];
                 $subCategories = [
                     'All',
@@ -59,13 +109,32 @@ class CategoryController extends Controller
                 break;
             default:
                 $name = 'Clothing';
+                $productId = 1;
                 $productNames = [
-                    'Product’s name ',
-                    'Product’s name ',
-                    'Product’s name ',
-                    'Product’s name ',
-                    'Product’s name ',
-                    'Product’s name ',
+                    [
+                        'name' => 'Product’s name',
+                        'brand' => 'Brand’s name'
+                    ],
+                    [
+                        'name' => 'Product’s name',
+                        'brand' => 'Brand’s name'
+                    ],
+                    [
+                        'name' => 'Product’s name',
+                        'brand' => 'Brand’s name'
+                    ],
+                    [
+                        'name' => 'Product’s name',
+                        'brand' => 'Brand’s name'
+                    ],
+                    [
+                        'name' => 'Product’s name',
+                        'brand' => 'Brand’s name'
+                    ],
+                    [
+                        'name' => 'Product’s name',
+                        'brand' => 'Brand’s name'
+                    ]
                 ];
                 $subCategories = [
                     'All',
@@ -91,7 +160,8 @@ class CategoryController extends Controller
             'brandName' => $brandName,
             'haveSwatchOptions' => $haveSwatchOptions,
             'subCategories' => $subCategories,
-            'currentSubCategories' => $currentSubCategories
+            'currentSubCategories' => $currentSubCategories,
+            'productId' => $productId,
         ]);
     }
 }

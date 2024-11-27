@@ -212,15 +212,15 @@
 
                 <div class="products">
                     @foreach ($productImages as $key => $image)
-                        <a href="/pdp/{{ $key % 3 + 1 }}" class="product-card">
+                        <a href="/pdp/{{ $productId }}" class="product-card">
                             <div class="favorite">
                                 <i class="fa-lg fa-regular fa-heart"></i>
                             </div>
                             <div class="special-tag">Tip</div>
                             <div class="discount-tag">10%</div>
                             <div class="product-item-image"><img src="{{ $image }}" alt="product 1"></div>
-                            <div class="product-brand">{{ $brandName }}</div>
-                            <p class="product-name">{{ $productNames[$key - 1] }}</p>
+                            <div class="product-brand">{{ $productNames[$key - 1]['brand'] }}</div>
+                            <p class="product-name">{{ $productNames[$key - 1]['name'] }}</p>
                             <div class="product-price">₦ 303.602,14 <span class="old-price">₦ 120.000,00</span></div>
                             @if ($haveSwatchOptions)
                                 <div class="color-options">
