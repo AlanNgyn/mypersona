@@ -61,6 +61,7 @@ h1 {
     background-size: cover;
     background-position: center;
     margin-bottom: 8px;
+    position: relative;
 }
 .brand-of-week .brand-item {
     width: 100%;
@@ -97,6 +98,11 @@ h1 {
 .alphabel-section .content .name {
     color: #1C1C1C;
 }
+.top-brands-list .brand-item img {
+    position: absolute;
+    top: 16px;
+    left: 18px;
+}
 
 </style>
 
@@ -114,14 +120,19 @@ h1 {
             <h2>Top brands</h2>
             <div>
                 <a class="brand-item" href="/brand/1" style="background-image: url('{{ asset('images/brand-listing/top-brand.png') }}');">
+                    <img src="{{ asset('images/brand-listing/logo1.png') }}" alt="">
                 </a>
-                <a class="brand-item" href="/brand/14" style="background-image: url('{{ asset('images/brand-listing/top-brand1.png') }}');">
+                <a class="brand-item" href="/brand/14" style="background-image: url('{{ asset('images/brand-listing/top-brand1.jpg') }}');">
+                    <img src="{{ asset('images/brand-listing/logo2.png') }}" alt="">
                 </a>
                 <a class="brand-item" href="/brand/20" style="background-image: url('{{ asset('images/brand-listing/top-brand2.png') }}');">
+                    <img src="{{ asset('images/brand-listing/logo3.png') }}" alt="">
                 </a>
-                <a class="brand-item" href="/brand/23" style="background-image: url('{{ asset('images/brand-listing/top-brand3.png') }}');">
+                <a class="brand-item" href="/brand/23" style="background-image: url('{{ asset('images/brand-listing/top-brand3.jpeg') }}');">
+                    <img src="{{ asset('images/brand-listing/logo4.png') }}" alt="">
                 </a>
-                <a class="brand-item" href="/brand/6" style="background-image: url('{{ asset('images/brand-listing/top-brand4.png') }}');">
+                <a class="brand-item" href="/brand/6" style="background-image: url('{{ asset('images/brand-listing/top-brand4.jpg') }}');">
+                    <img src="{{ asset('images/brand-listing/logo5.png') }}" alt="">
                 </a>
             </div>
 
