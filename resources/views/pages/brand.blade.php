@@ -372,6 +372,7 @@
     display: inline-block;
     width: 56px;
     height: 56px;
+    margin-left: 5px;
 }
 .color.filter-item .color-option-item.green {
     background-color: #008000;
@@ -421,7 +422,7 @@
 .slider-range .right {
     left: 100%;
 }
-.product-card .favorite i.fa-solid{
+i.fa-solid.fa-heart{
     color: #DA0202;
 }
 .product-item-image {
@@ -444,6 +445,7 @@
     left: 15px;
     top: 15px;
     cursor: pointer;
+    display: block;
 }
 
 
@@ -464,8 +466,7 @@
     align-items: center;
 }
 
-.brand-container .banner .follow img {
-    width: 20px;
+.brand-container .banner .follow i {
     padding-top: 2px;
 }
 
@@ -524,8 +525,10 @@
             <div class="banner">
                 <img src="{{ $banner }}" alt="banner">
                 <img class="brand-logo" src="{{ $logo }}" alt="banner">
-                <div class="back-button"><i class="fa-solid fa-chevron-left"></i></div>
-                <div class="follow"><img src="{{ asset('images/header/icon/wishlist.png') }}"></div>
+                <a class="back-button" href="/brand-listing"><i class="fa-solid fa-chevron-left"></i></a>
+                <div class="follow">
+                    <i class="fa-lg fa-regular fa-heart"></i>
+                </div>
                 <div class="tabs">
                     <span class="tab-item current">Women</span>
                     <span class="tab-item">Men</span>
