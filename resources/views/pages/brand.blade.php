@@ -10,6 +10,7 @@
     height: 400px;
     margin: 0 -15px;
     width: unset;
+    position: relative;
 }
 
 .producs-container {
@@ -428,6 +429,93 @@
     background-color: #fff;
     margin-bottom: 12px;
 }
+.brand-container .banner .back-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    backdrop-filter: blur(30px);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1c1c1c;
+    left: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+
+.brand-container .banner .follow {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(30px);
+    z-index: 1;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #1c1c1c;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-container .banner .follow img {
+    width: 20px;
+    padding-top: 2px;
+}
+
+.brand-container .banner .brand-logo {
+    position: absolute;
+    bottom: 50px;
+    left: 115px;
+    z-index: 1;
+}
+
+.brand-container .banner .tabs {
+    position: absolute;
+    bottom: 12px;
+    left: 112px;
+    z-index: 2;
+}
+
+.brand-container .banner .tab-item {
+    color: #717171;
+    font-size: 14px;
+    padding: 9px 0;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.brand-container .banner .tab-item.current {
+    color: #FFFFFF;
+    position: relative;
+}
+.brand-container .banner .tab-item.current:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background-color: #fff;
+    bottom: 0px;
+    left: 12px;
+}
+.brand-container .banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 15%, transparent 52%);
+    z-index: 0;
+}
 </style>
 
 @section('content')
@@ -435,6 +523,15 @@
         <div class="main-content">
             <div class="banner">
                 <img src="{{ $banner }}" alt="banner">
+                <img class="brand-logo" src="{{ $logo }}" alt="banner">
+                <div class="back-button"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="follow"><img src="{{ asset('images/header/icon/wishlist.png') }}"></div>
+                <div class="tabs">
+                    <span class="tab-item current">Women</span>
+                    <span class="tab-item">Men</span>
+                    <span class="tab-item">Kids</span>
+                </div>
+                <div class="overlay"></div>
             </div>
             <div class="producs-container">
                 <div class="category-title">

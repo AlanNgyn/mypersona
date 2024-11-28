@@ -9,6 +9,7 @@ class BrandController extends Controller
     public function getBrand($id)
     {
         $banner = asset('images/brand/'.$id.'/banner.png');
+        $logo = asset('images/brand/'.$id.'/logo.png');
         switch ($id) {
             case '1':
                 $title = 'Adidas';
@@ -1746,6 +1747,7 @@ class BrandController extends Controller
             'banner' => $banner,
             'productImages' => $productImages,
             'products' => $products,
+            'logo' => $logo,
         ]);
     }
 }
