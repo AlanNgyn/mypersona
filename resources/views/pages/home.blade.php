@@ -322,6 +322,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        margin-bottom: 8px;
     }
 
     .brand-item {
@@ -387,6 +388,14 @@
         font-size: 12px;
         padding-left: 8px;
     }
+    .section-branch .brand-item {
+        width: 127px;
+        height: 127px;
+        display: flex;
+        background-color: #F2F2F2;
+        justify-content: center;
+        align-items: center;
+    }
 
 </style>
 @section('content')
@@ -415,7 +424,7 @@
             <div class="brand-container">
                 <div class="brand-item">
                     <a class="item-image-brand" href="/my-account/brand">
-                        <img src="{{ asset('images/section/brand/Clothing.png') }}" alt="Clothing">
+                        <img src="{{ asset('images/section/brand/Clothing.png') }}" width="52" height="98" alt="Clothing">
                     </a>
                 </div>
                 <label>Clothing</label>
@@ -424,7 +433,7 @@
             <div class="brand-container">
                 <div class="brand-item">
                     <a class="item-image-brand" href="/my-account/brand">
-                        <img src="{{ asset('images/section/brand/Shoes.png') }}" alt="Shoes">
+                        <img src="{{ asset('images/section/brand/Shoes.png') }}" width="103" height="104" alt="Shoes">
                     </a>
                 </div>
                 <label>Shoes</label>
@@ -433,7 +442,7 @@
             <div class="brand-container">
                 <div class="brand-item">
                     <a class="item-image-brand" href="/my-account/brand">
-                        <img src="{{ asset('images/section/brand/Sportswear.png') }}" alt="Sportswear">
+                        <img src="{{ asset('images/section/brand/Sportswear.png') }}" width="56" height="104" alt="Sportswear">
                     </a>
                 </div>
                 <label>Sportswear</label>
@@ -442,7 +451,7 @@
             <div class="brand-container">
                 <div class="brand-item">
                     <a class="item-image-brand" href="/my-account/brand">
-                        <img src="{{ asset('images/section/brand/Accessories.png') }}" alt="Accessories">
+                        <img src="{{ asset('images/section/brand/Accessories.png') }}" width="102" height="104" alt="Accessories">
                     </a>
                 </div>
                 <label>Accessories</label>
@@ -451,7 +460,7 @@
             <div class="brand-container">
                 <div class="brand-item">
                     <a class="item-image-brand" href="/my-account/brand">
-                        <img src="{{ asset('images/section/brand/Skincare_Makeup.png') }}" alt="Skincare & Makeup">
+                        <img src="{{ asset('images/section/brand/Skincare_Makeup.png') }}" width="85" height="104" alt="Skincare & Makeup">
                     </a>
                 </div>
                 <label>Skincare & Makeup</label>
@@ -460,7 +469,7 @@
             <div class="brand-container">
                 <div class="brand-item">
                     <a class="item-image-brand" href="/my-account/brand">
-                        <img src="{{ asset('images/section/brand/Persona-Thrifts.png') }}" alt="Persona-Thrifts">
+                        <img src="{{ asset('images/section/brand/Persona-Thrifts.png') }}" alt="Persona-Thrifts" style="width: 100%;">
                     </a>
                 </div>
                 <label>Persona-Thrifts</label>
